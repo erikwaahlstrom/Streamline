@@ -33,3 +33,12 @@ body {
     background-color: #39c0eb;
     display: block;
 }
+
+/*** Loginform start ***/
+
+.input-field {
+    width: 30%;
+    margin: 0 auto;
+}
+
+/*** Loginform end ***/
