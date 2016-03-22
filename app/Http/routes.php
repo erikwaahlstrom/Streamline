@@ -13,7 +13,12 @@
 
 Route::get('/', function () {
     return view('welcome');
+
 });
+
+Route::get('/login', 'PageController@showLoginView');
+Route::get('/dashboard', 'PageController@showDashboardView');
+
 
 /*
 |--------------------------------------------------------------------------
