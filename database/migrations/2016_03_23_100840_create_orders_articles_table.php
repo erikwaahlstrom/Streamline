@@ -13,7 +13,7 @@ class CreateOrdersArticlesTable extends Migration
     public function up()
     {
         Schema::create('orders_articles' function (Blueprint $table) {
-            $table->increments('order_id');
+            $table->string('order_id');
             $table->string('article_id');
         });
     }
