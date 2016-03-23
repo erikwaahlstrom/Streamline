@@ -10,7 +10,7 @@ class PageController extends Controller
 {
     public function showLoginView()
     {
-        return view('login');
+        return view('auth.login');
     }
 
     public function showDashboardView()

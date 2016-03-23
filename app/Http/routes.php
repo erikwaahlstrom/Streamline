@@ -22,6 +22,7 @@ Route::get('/register', 'PageController@showRegisterView');
 Route::get('/confirmed', 'PageController@showConfirmedView');
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
