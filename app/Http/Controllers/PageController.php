@@ -17,4 +17,15 @@ class PageController extends Controller
     {
         return view('dashboard');
     }
+
+    public function showRegisterView()
+    {
+        return view('register');
+    }
+
+    public function showConfirmedView()
+    {
+        return view('confirmed');
+    }
+
 }

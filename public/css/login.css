@@ -30,9 +30,11 @@ body {
 /*** Loginform start ***/
 
 .container .row {
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
+/* Logotop */
 #helens-logga {
     margin-bottom: 3em;
 }
@@ -67,6 +69,7 @@ input#password.validate {
       background-color: #5A9AD0;
     }
 
+/* Språkknapp */
 #languageicon {
     color:white;
     position: absolute;
