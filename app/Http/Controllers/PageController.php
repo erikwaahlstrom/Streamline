@@ -37,4 +37,9 @@ class PageController extends Controller
     {
         return view('arrivaldate');
     }
+
+    public function showDeliveriesView()
+    {
+        return view('deliveries');
+    }
 }

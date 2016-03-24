@@ -22,6 +22,8 @@ Route::get('/register', 'PageController@showRegisterView');
 Route::get('/confirmed', 'PageController@showConfirmedView');
 Route::get('/create', 'PageController@showCreateView');
 Route::get('/arrivaldate', 'PageController@showArrivaldateView');
+Route::get('/deliveries', 'PageController@showDeliveriesView');
+
 
 
 /*
