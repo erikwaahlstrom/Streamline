@@ -20,6 +20,7 @@ Route::get('/login', 'PageController@showLoginView');
 Route::get('/dashboard', 'PageController@showDashboardView');
 Route::get('/register', 'PageController@showRegisterView');
 Route::get('/confirmed', 'PageController@showConfirmedView');
+Route::get('/create', 'PageController@showCreateView');
 
 
 

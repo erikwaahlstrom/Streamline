@@ -28,4 +28,8 @@ class PageController extends Controller
         return view('confirmed');
     }
 
+    public function showCreateView()
+    {
+        return view('create');
+    }
 }

@@ -8,7 +8,7 @@ body {
     width: 100%;
     display: table;
     font-weight: 100;
-    font-family: 'Lato';
+    font-family: 'Comfortaa';
 }
 
 ul a:hover, a:active {
@@ -20,6 +20,25 @@ ul a:hover, a:active {
     width: 260px;
     z-index: 0;
     overflow-x: hidden;
+}
+
+.input-field:first-child {
+  margin-top: 10%;
+}
+
+.input-form {
+
+}
+
+.browser-default {
+  margin-top: 10%;
+  margin-left: -2%
+}
+
+.confirm {
+  width: 70%;
+  height: auto;
+  margin-top: 10%;
 }
 
 .side-nav.fixed > .loggaut a {
@@ -144,8 +163,10 @@ ul a:hover, a:active {
     display: inline-block;
 }
 
+
+
 .title {
-    font-size: 96px;
+    font-size: 70px;
 }
 
 .topbar {
