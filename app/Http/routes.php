@@ -24,7 +24,6 @@ Route::get('/create', 'PageController@showCreateView');
 Route::get('/arrivaldate', 'PageController@showArrivaldateView');
 
 
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
