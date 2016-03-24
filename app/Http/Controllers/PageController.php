@@ -32,4 +32,11 @@ class PageController extends Controller
     {
         return view('create');
     }
+
+    public function showArrivaldateView()
+    {
+        return view('arrivaldate');
+    }
+
+
 }
