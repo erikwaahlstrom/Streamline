@@ -40,3 +40,9 @@ Route::get('/deliveries', 'PageController@showDeliveriesView');
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
+});
