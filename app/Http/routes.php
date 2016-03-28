@@ -23,6 +23,7 @@ Route::get('/confirmed', 'PageController@showConfirmedView');
 Route::get('/create', 'PageController@showCreateView');
 Route::get('/arrivaldate', 'PageController@showArrivaldateView');
 Route::get('/deliveries', 'PageController@showDeliveriesView');
+Route::get('/edit', 'PageController@ShowEditView');
 
 
 

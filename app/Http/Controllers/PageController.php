@@ -42,4 +42,10 @@ class PageController extends Controller
     {
         return view('deliveries');
     }
+
+    public function showEditView()
+    {
+        return view('edit');
+    }
+
 }
