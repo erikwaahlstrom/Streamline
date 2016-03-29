@@ -48,4 +48,9 @@ class PageController extends Controller
         return view('edit');
     }
 
+    public function showRegisterTransportView()
+    {
+      return view('registertransport');
+    }
+
 }
