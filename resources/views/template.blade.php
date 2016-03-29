@@ -21,14 +21,20 @@
         <!-- Logga End -->
 
       <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ny Leverantör</a></li>
-      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a></li>
+        <li><a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a></li>
       <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ankommande leveranser</a></li>
-      <h5>Inloggad som Leif Larsson</h5>
+      
+          <h5>Inloggad som Leif Larsson</h5>
+
       <div class="loggaut"><a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a></div>
       <div class="lang"><a href="#"><i class="tiny material-icons">language</i>Språk</a>
-    </ul>
+      
+      </div>
+      </ul>
 
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a></div>
+    {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}}
+
+    </div>
         <!-- Sidenav end -->
 
         <!-- Container: Innehåll för dashboard -->

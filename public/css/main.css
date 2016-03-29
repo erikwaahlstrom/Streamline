@@ -23,11 +23,11 @@ ul a:hover, a:active {
 }
 
 .input-field:first-child {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .input-form {
-
+    margin-top: 8%;
 }
 
 .browser-default {
@@ -38,7 +38,7 @@ ul a:hover, a:active {
 .confirm {
   width: 70%;
   height: auto;
-  margin-top: 10%;
+  background-color: #5A9AD0;
 }
 
 .side-nav.fixed > .loggaut a {
@@ -96,9 +96,8 @@ ul a:hover, a:active {
 }
 
 .lang {
-    margin-top: 15%;
     width: 70%;
-    margin-left:12%;
+    margin-left:14%;
     height:64px;
 }
 
