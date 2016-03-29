@@ -1,7 +1,39 @@
-@extends('layouts.app')
+@extends('logintemplate')
 
 @section('content')
-<div class="container">
+<img src="{{url('img/helens-logga.png')}}" id="helens-logga">
+
+<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+  {!! csrf_field() !!}
+  <div class="row">
+    <div class="input-field white-text text-darken-2">
+      <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}">
+      <label for="email" class="white-text text-darken-2">Användarnamn</label>
+    </div>
+   </div>
+
+  <div class="row">
+    <div class="input-field white-text text-darken-2">
+      <input id="password" type="password" class="validate" name="password">
+      <label for="password" class="white-text text-darken-2">Lösenord</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field white-text text-darken-2">
+      <input id="reapeatpassword" type="password" class="validate" name="password_confirmation">
+      <label for="repeatpassword" class="white-text text-darken-2">Upprepa Lösenord</label>
+    </div>
+  </div>
+
+  <button class="btn waves-effect default #ffffff white" type="submit" name="action" id="loginknapp">Registrera
+    <i class="material-icons right">send</i>
+  </button>
+</form>
+
+<a href="#"><i class="material-icons small" id="languageicon">language</i></a>
+
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -10,7 +42,7 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {!! csrf_field() !!}
 
-                        <!-- <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
@@ -22,7 +54,7 @@
                                     </span>
                                 @endif
                             </div>
-                        </div> -->
+                        </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label class="col-md-4 control-label">E-Mail Address</label>
@@ -78,5 +110,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection

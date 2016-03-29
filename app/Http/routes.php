@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-
+    // return view('welcome');
+    return view('register');
 });
 
 Route::get('/login', 'PageController@showLoginView');
@@ -46,4 +46,5 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/home', 'HomeController@index');
+
 });

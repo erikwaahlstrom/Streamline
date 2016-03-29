@@ -57,6 +57,13 @@ input#password.validate {
     box-shadow: none;
 }
 
+
+/* Input password */
+input#reapeatpassword.validate {
+    border-bottom: 1px solid white;
+    box-shadow: none;
+}
+
 /* Loginknapp */
 #loginknapp {
     color: #5A9AD0;
