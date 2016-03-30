@@ -37,4 +37,20 @@ class PageController extends Controller
     {
         return view('arrivaldate');
     }
+
+    public function showDeliveriesView()
+    {
+        return view('deliveries');
+    }
+
+    public function showEditView()
+    {
+        return view('edit');
+    }
+
+    public function showRegisterTransportView()
+    {
+      return view('registertransport');
+    }
+
 }

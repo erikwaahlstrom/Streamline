@@ -12,16 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-
+    // return view('welcome');
+    return redirect('/login');
 });
 
-Route::get('/login', 'PageController@showLoginView');
-Route::get('/dashboard', 'PageController@showDashboardView');
-Route::get('/register', 'PageController@showRegisterView');
-Route::get('/confirmed', 'PageController@showConfirmedView');
-Route::get('/create', 'PageController@showCreateView');
-Route::get('/arrivaldate', 'PageController@showArrivaldateView');
+
 
 
 /*
@@ -37,4 +32,26 @@ Route::get('/arrivaldate', 'PageController@showArrivaldateView');
 
 Route::group(['middleware' => ['web']], function () {
     //
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
+
+    // Route::get('/login', 'PageController@showLoginView');
+    // Route::get('/register', 'PageController@showRegisterView');
+    Route::get('/registertransport', 'PageController@showRegisterTransportView');
+
+
+    // Auth middleware routes
+    // Route::group(['middleware' => 'auth', function() {
+        Route::get('/dashboard', 'PageController@showDashboardView');
+        Route::get('/confirmed', 'PageController@showConfirmedView');
+        Route::get('/create', 'PageController@showCreateView');
+        Route::get('/arrivaldate', 'PageController@showArrivaldateView');
+        Route::get('/deliveries', 'PageController@showDeliveriesView');
+        Route::get('/edit', 'PageController@ShowEditView');
+    // }]);
+
 });
