@@ -8,6 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
         <link href="{{ url('css/main.css') }}" rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
     </head>
 
     <body>
@@ -37,14 +40,22 @@
         </div>
         <!-- Container end -->
 
+
+<script src="./jquery.js"></script>
+<script src="js/jquery.datetimepicker.full.js"></script>
+<script type="text/javascript">
+  jQuery('#datetimepicker').datetimepicker();
+</script>
+
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<!--
       <script type="text/javascript">
         $('.datepicker').pickadate({
           selectMonths: true, // Creates a dropdown to control month
           selectYears: 15 // Creates a dropdown of 15 years to control year
         });
       </script>
+ -->
     </body>
 </html>
