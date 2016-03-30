@@ -8,24 +8,28 @@
 <div class="input-form">
   <div class="row">
     <form>
+
       <div class="row">
         <div class="input-field col s12">
-          <input id="name" type="text" class="validate">
-          <label for="name" class="active">Leverantör</label>
+          <input id="name" type="text" class="validate" id="inputcolor">
+          <label for="name" class="active" id="inputcolor">Leverantör</label>
         </div>
         </div>
+
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password" class="active">Lösenord</label>
+          <input id="password" type="password" class="validate" id="inputcolor">
+          <label for="password" class="active" id="inputcolor">Lösenord</label>
         </div>
       </div>
+
       <div class="row">
         <div class="input-field col s12">
           <input id="email" type="email" class="validate">
-          <label for="email" class="active">Email</label>
+          <label for="email" class="active" id="inputcolor">Email</label>
         </div>
       </div>
+
       <div class="input-field col s12">
         <select class="browser-default">
       <option value="" disabled selected>Favoritkund</option>
@@ -40,7 +44,7 @@
 
 <!-- Button -->
   <button class="btn waves-effect default #5A9AD0" type="submit" name="action" id="confirmknapp"> Bekräfta
-<i class="material-icons right">done</i>
+{{-- <i class="material-icons right">done</i> --}}
 </button>
 
 

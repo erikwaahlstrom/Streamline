@@ -162,7 +162,7 @@ ul a:hover, a:active {
 }
 
 
-
+/* Titeltext */
 .title {
     font-size: 50px;
 }
@@ -170,13 +170,36 @@ ul a:hover, a:active {
 .topbar {
     width: 100%;
     height: 50px;
-    background-color: #5a9ad0;
+    background-color: #005B92;
     display: block;
 }
 
 /* knapp */
 #confirmknapp {
-    background-color: #5A9AD0;
+    background-color: #005B92;
     width: 200px;
     height: 50px;
+}
+
+/* inputfields */
+#inputcolor {
+    color: #000000;
+}
+
+/* Input användarnamn/email */
+input#email.validate {
+    border-bottom: 1px solid #005B92;
+    box-shadow: none;
+}
+
+/* Input password */
+input#password.validate {
+    border-bottom: 1px solid #005B92;
+    box-shadow: none;
+}
+
+/* Input name */
+input#name.validate {
+    border-bottom: 1px solid #005B92;
+    box-shadow: none;
 }
