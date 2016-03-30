@@ -2,50 +2,67 @@
 <html>
     <head>
         <title>Laravel</title>
-        <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
         <link href="{{ url('css/main.css') }}" rel="stylesheet" type="text/css">
-
-
-<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+        <link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
     </head>
 
     <body>
         <!-- Sidenav: Sidmenyn för dashboard -->
-    <div class="sidebar"><ul id="slide-out" class="side-nav fixed">
+    <div class="sidebar">
+        <ul id="slide-out" class="side-nav fixed">
 
         <!-- Heléns Logga -->
-        <div class="logo-box"> <div class="helens-logga">
-    <img src="{{url('img/helens-logga.png')}}" class="logo">
-        </div></div>
+        <div class="logo-box">
+          <div class="helens-logga">
+            <img src="{{url('img/helens-logga.png')}}" class="logo">
+          </div>
+        </div>
         <!-- Logga End -->
 
-      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ny Leverantör</a></li>
-        <li><a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a></li>
-      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ankommande leveranser</a></li>
-      
-          <h5>Inloggad som Leif Larsson</h5>
+      <li id="toplink">
+        <a href="#!"><i class="tiny material-icons">label_outline </i> Ny Leverantör</a>
+      </li>
 
-      <div class="loggaut"><a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a></div>
-      <div class="lang"><a href="#"><i class="tiny material-icons">language</i>Språk</a>
-      
+      <li>
+        <a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a>
+      </li>
+
+      <li>
+        <a href="#!"><i class="tiny material-icons">label_outline </i> Ankommande leveranser</a>
+      </li>
+
+    <div id="bottomlinks">
+        <h5>Inloggad som Leif Larsson</h5>
+
+      <div class="loggaut">
+        <li>
+          <a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a>
+        </li>
       </div>
+
+      <div class="lang">
+        <li>
+          <a href="#"><i class="tiny material-icons">language</i>Språk</a>
+        </li>
+      </div>
+    </div>
+
       </ul>
 
-    {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}}
+      {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}}
 
     </div>
-        <!-- Sidenav end -->
+    <!-- Sidenav end -->
 
         <!-- Container: Innehåll för dashboard -->
         <div class="container">
             @yield('content')
         </div>
         <!-- Container end -->
-
 
 <script src="./jquery.js"></script>
 <script src="js/jquery.datetimepicker.full.js"></script>

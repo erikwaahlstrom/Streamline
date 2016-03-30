@@ -11,17 +11,165 @@ body {
     font-family: 'Comfortaa';
 }
 
-ul a:hover, a:active {
-    border-left: 5px solid #5a9ad0;
-}
 
+
+/*** Dashboard sidomeny START ***/
+
+/*Sidomeny box*/
 .side-nav {
     background-color:#131010;
     width: 260px;
     z-index: 0;
     overflow-x: hidden;
+    height: 100%;
 }
 
+/*Hover sidomenyknappar*/
+ul a:hover, a:active {
+    border-left: 5px solid #5a9ad0;
+}
+
+/*Logga ut knapp START*/
+.side-nav.fixed > .loggaut a {
+    color: #E9E1E1;
+    font-weight: 900;
+    width: 100%;
+}
+
+.side-nav.fixed > .loggaut a:hover {
+    font-weight: 900;
+    color: #fff;
+}
+
+.side-nav.fixed li a:hover, a:active {
+    font-weight: 900;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*Logga ut knapp END*/
+
+/*Första sidomeny länken*/
+.side-nav.fixed li a:first-child {
+    /*margin-top: 5%;*/
+}
+
+/*Sidomeny länkar*/
+.side-nav.fixed li {
+    color: #E9E1E1;
+    padding: 0px;
+}
+
+/*Sidomeny länkar*/
+.side-nav.fixed li a {
+    color: #E9E1E1;
+    display: block;
+    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    padding: 0px;
+}
+
+/*Sidomeny heading/länkar*/
+.side-nav h5 {
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 55%;
+    width: 100%;
+    height: 20px;
+    margin-left: 35px;
+    color: #E9E1E1;
+    text-transform: capitalize;
+}
+
+/*First link sidomeny*/
+#toplink {
+    margin-top: 0.5em;
+}
+
+#bottomlinks {
+    position: absolute;
+    bottom: 0px;
+}
+
+/*Språkknapp*/
+.lang {
+    /*width: 70%;
+    margin-left:14%;
+    height:64px;*/
+}
+
+/*Språkknapp hyperlänkar*/
+.side-nav.fixed > .lang a {
+    /*color: #E9E1E1;
+    background-color: #3D3B3B;
+    font-weight: 900;*/
+}
+
+/*Språkknapp hyperlänkar hover & active*/
+.side-nav.fixed > .lang a:hover, a:active {
+    font-weight: 900;
+    color: #fff;
+}
+
+/*Logotyp*/
+.helens-logga {
+    width:100%;
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+    padding-top: 10%;
+}
+
+/*Logotyp box*/
+.logo-box {
+    width:100%;
+    height: 100px;
+    background-color: #005B92;
+}
+
+/*Logotyp box*/
+.logo {
+    width: 40%;
+    height: 40%;
+}
+
+/*Materialize ikoner*/
+.material-icons {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*?*/
+.sidebar {
+    position:relative;
+}
+
+/*Innehåll*/
+.container {
+    width: 90%;
+    overflow-y: auto;
+    /*height: calc(100%);*/
+    text-align: center;
+    display: table-cell;
+    margin-left: 25%;
+    max-width: 900px;
+    position: absolute;
+    border: 1px solid red;
+}
+
+/*Innehåll*/
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+/*Titel på Innehåll*/
+.title {
+    font-size: 50px;
+}
+
+/*Input styling START*/
 .input-field:first-child {
   margin-top: 5%;
 }
@@ -40,133 +188,9 @@ ul a:hover, a:active {
   margin-left: -2%
 }
 
-.side-nav.fixed > .loggaut a {
-    color: #E9E1E1;
-    font-weight: 900;
-    width: 100%;
-}
+/*Input styling END*/
 
-.side-nav.fixed > .loggaut a:hover {
-    color: #E9E1E1;
-    background-color: #E53A40;
-    font-weight: 900;
-    width: 100%;
-    border-left: none;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-}
-
-.side-nav.fixed li a:hover, a:active {
-    font-weight: 900;
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.side-nav.fixed li a
-{
-    color: #E9E1E1;
-    display: block;
-    font-size: 1rem;
-    height: 64px;
-    line-height: 64px;
-    padding: 0px;
-}
-
-.side-nav.fixed li {
-    color: #E9E1E1;
-    padding: 0px;
-}
-
-.side-nav.fixed li a:first-child {
-    margin-top: 5%;
-}
-
-.side-nav h5 {
-    font-weight: 900;
-    font-size: 16px;
-    margin-top: 55%;
-    width: 100%;
-    height: 20px;
-    margin-left: 35px;
-    color: #E9E1E1;
-    text-transform: capitalize;
-}
-
-.lang {
-    width: 70%;
-    margin-left:14%;
-    height:64px;
-}
-
-.side-nav.fixed > .lang a {
-    color: #E9E1E1;
-    background-color: #3D3B3B;
-    font-weight: 900;
-}
-
-.side-nav.fixed > .lang a:hover, a:active {
-    font-weight: 900;
-    color: #131010;
-    background-color: #E9E1E1;
-    border-left: none;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-}
-
-.helens-logga {
-    width:100%;
-    justify-content: center;
-    display: flex;
-    vertical-align: middle;
-    padding-top: 10%;
-}
-
-.logo-box {
-    width:100%;
-    height: 100px;
-    background-color: #005B92;
-}
-
-.logo {
-    width: 40%;
-    height: 40%;
-}
-
-.material-icons {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.sidebar {
-    position:relative;
-}
-
-.container {
-    width: 90%;
-    overflow-y: auto;
-    height: calc(100%);
-    text-align: center;
-    display: table-cell;
-    margin-left: 25%;
-    max-width: 900px;
-    position: absolute;
-}
-
-.content {
-    text-align: center;
-    display: inline-block;
-}
-
-
-
-.title {
-    font-size: 50px;
-}
-
+/*?*/
 .topbar {
     width: 100%;
     height: 50px;
@@ -174,7 +198,7 @@ ul a:hover, a:active {
     display: block;
 }
 
-/* knapp */
+/*Confirm knapp*/
 #confirmknapp {
     background-color: #5A9AD0;
     width: 200px;
