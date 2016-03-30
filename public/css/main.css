@@ -26,6 +26,11 @@ ul a:hover, a:active {
   margin-top: 5%;
 }
 
+.input-field {
+    width: 30%;
+    margin: 0 auto;
+}
+
 .input-form {
     margin-top: 8%;
 }
@@ -33,12 +38,6 @@ ul a:hover, a:active {
 .browser-default {
   margin-top: 10%;
   margin-left: -2%
-}
-
-.confirm {
-  width: 70%;
-  height: auto;
-  background-color: #5A9AD0;
 }
 
 .side-nav.fixed > .loggaut a {
@@ -165,7 +164,7 @@ ul a:hover, a:active {
 
 
 .title {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .topbar {
@@ -173,4 +172,11 @@ ul a:hover, a:active {
     height: 50px;
     background-color: #5a9ad0;
     display: block;
+}
+
+/* knapp */
+#confirmknapp {
+    background-color: #5A9AD0;
+    width: 200px;
+    height: 50px;
 }

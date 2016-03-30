@@ -7,7 +7,7 @@
     <!-- Input Fields -->
 <div class="input-form">
   <div class="row">
-    <form class="col s9 ">
+    <form>
       <div class="row">
         <div class="input-field col s12">
           <input id="name" type="text" class="validate">
@@ -38,12 +38,14 @@
 </div>
   <!-- Input Fields: end -->
 
-  <div class="confirm">
-    <button class="btn waves-effect default #5A9AD0" type="submit" name="action" id="addlevereantor">Bekräfta
-      <i class="material-icons right">done</i>
-      </button>
-  </div>
+<!-- Button -->
+  <button class="btn waves-effect default #5A9AD0" type="submit" name="action" id="confirmknapp"> Bekräfta
+<i class="material-icons right">done</i>
 </button>
+
+
+
+
 </div>
 @stop
 
