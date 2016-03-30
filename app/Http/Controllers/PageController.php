@@ -35,7 +35,8 @@ class PageController extends Controller
             return redirect('/');
         }
 
-        return view('confirmed');
+        $user = Auth::user();
+        return view('confirmed', compact('user'));
     }
 
     public function showCreateView()
@@ -44,7 +45,8 @@ class PageController extends Controller
             return redirect('/');
         }
 
-        return view('create');
+        $user = Auth::user();
+        return view('create', compact('user'));
     }
 
     public function showArrivaldateView()
@@ -53,7 +55,8 @@ class PageController extends Controller
             return redirect('/');
         }
 
-        return view('arrivaldate');
+        $user = Auth::user();
+        return view('arrivaldate', compact('user'));
     }
 
     public function showDeliveriesView()
@@ -62,7 +65,8 @@ class PageController extends Controller
             return redirect('/');
         }
 
-        return view('deliveries');
+        $user = Auth::user();
+        return view('deliveries', compact('user'));
     }
 
     public function showEditView()
@@ -70,8 +74,9 @@ class PageController extends Controller
         if (!Auth::check()) {
             return redirect('/');
         }
-        
-        return view('edit');
+
+        $user = Auth::user();
+        return view('edit', compact('user'));
     }
 
     public function showRegisterTransportView()
