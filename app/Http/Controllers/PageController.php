@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Auth;
 
 class PageController extends Controller
 {
@@ -15,7 +16,12 @@ class PageController extends Controller
 
     public function showDashboardView()
     {
-        return view('dashboard');
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('dashboard', compact('user'));
     }
 
     public function showRegisterView()
@@ -25,27 +31,52 @@ class PageController extends Controller
 
     public function showConfirmedView()
     {
-        return view('confirmed');
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('confirmed', compact('user'));
     }
 
     public function showCreateView()
     {
-        return view('create');
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('create', compact('user'));
     }
 
     public function showArrivaldateView()
     {
-        return view('arrivaldate');
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('arrivaldate', compact('user'));
     }
 
     public function showDeliveriesView()
     {
-        return view('deliveries');
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('deliveries', compact('user'));
     }
 
     public function showEditView()
     {
-        return view('edit');
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('edit', compact('user'));
     }
 
     public function showRegisterTransportView()

@@ -23,25 +23,15 @@
         </div>
         <!-- Logga End -->
 
-      <li id="toplink">
-        <a href="#!"><i class="tiny material-icons">label_outline </i> Ny Leverantör</a>
-      </li>
+      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ny Leverantör</a></li>
+        <li><a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a></li>
+      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ankommande leveranser</a></li>
 
-      <li>
-        <a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a>
-      </li>
+          <h5>Inloggad som <br>{{ $user->email }}</h5>
 
-      <li>
-        <a href="#!"><i class="tiny material-icons">label_outline </i> Ankommande leveranser</a>
-      </li>
+      <div class="loggaut"><a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a></div>
+      <div class="lang"><a href="#"><i class="tiny material-icons">language</i>Språk</a>
 
-    <div id="bottomlinks">
-        <h5>Inloggad som Leif Larsson</h5>
-
-      <div class="loggaut">
-        <li>
-          <a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a>
-        </li>
       </div>
 
       <div class="lang">
