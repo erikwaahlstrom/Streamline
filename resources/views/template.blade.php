@@ -30,9 +30,6 @@
           <h5>Inloggad som <br>{{ $user->email }}</h5>
 
       <div class="loggaut"><a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a></div>
-      <div class="lang"><a href="#"><i class="tiny material-icons">language</i>Språk</a>
-
-      </div>
 
       <div class="lang">
         <li>
