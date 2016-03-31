@@ -52,6 +52,7 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('/arrivaldate', 'PageController@showArrivaldateView');
         Route::get('/deliveries', 'PageController@showDeliveriesView');
         Route::get('/edit', 'PageController@ShowEditView');
+        Route::get('/createUser', 'PageController@showCreateUserView');
     // }]);
 
 });

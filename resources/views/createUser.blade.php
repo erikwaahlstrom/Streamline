@@ -11,19 +11,19 @@
       <div class="row">
         <div class="input-field col s12">
           <input id="name" type="text" class="validate">
-          <label for="name" class="active">Användare</label>
+          <label for="name" class="active" id="inputcolor">Användare</label>
         </div>
         </div>
       <div class="row">
         <div class="input-field col s12">
           <input id="password" type="password" class="validate">
-          <label for="password" class="active">Lösenord</label>
+          <label for="password" class="active" id="inputcolor">Lösenord</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
           <input id="email" type="email" class="validate">
-          <label for="email" class="active">Email</label>
+          <label for="email" class="active" id="inputcolor">Email</label>
         </div>
       </div>
       <div class="input-field col s12">
