@@ -49,7 +49,11 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('/dashboard', 'PageController@showDashboardView');
         Route::get('/confirmed', 'PageController@showConfirmedView');
         Route::get('/create', 'PageController@showCreateView');
-        Route::get('/arrivaldate', 'PageController@showArrivaldateView');
+
+        Route::post('/newbooking', 'BookingController@store');
+        Route::get('/newbooking', 'PageController@showArrivaldateView');
+
+
         Route::get('/deliveries', 'PageController@showDeliveriesView');
         Route::get('/edit', 'PageController@ShowEditView');
     // }]);

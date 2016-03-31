@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookingsTable extends Migration
+class CreateBookingsOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,9 @@ class CreateBookingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookings', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('date');
-            $table->string('reference_number');
-            $table->string('supplier_id');
+        Schema::create('bookings_orders', function (Blueprint $table) {
+            $table->string('booking_id');
+            $table->string('order_id');
         });
     }
 
@@ -27,6 +25,6 @@ class CreateBookingsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('bookings');
+        Schema::drop('bookings_orders');
     }
 }
