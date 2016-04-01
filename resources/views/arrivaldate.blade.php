@@ -19,9 +19,9 @@
         <!-- <div class="input-field">
           <input id="transporter" type="text" class="validate" name="date">
           <label for="transporter">Transportör</label>
-        </div> -->
+        </div>
 
-        <!-- <div class="input-field">
+        <div class="input-field">
           <input id="referencenumber" type="text" class="validate" name="reference_number">
           <label for="referencenumber">Referensnummer</label>
         </div>
@@ -29,14 +29,14 @@
         <div class="input-field">
           <input id="ordernumber" type="text" class="validate" name="order_id">
           <label for="ordernumber">Beställningsnummer</label>
-        </div> -->
+        </div>
 
-        <!-- <div class="input-field">
+        <div class="input-field">
           <input id="ariclenumber" type="text" class="validate" name="date">
           <label for="ariclenumber">Artikelnummer</label>
-        </div> -->
+        </div>
 
-        <!-- <div class="input-field">
+        <div class="input-field">
           <input id="position" type="text" class="validate" name="position">
           <label for="position">Position?</label>
         </div>
@@ -64,8 +64,8 @@
           <div class="file-path-wrapper">
             <input class="file-path validate" type="text" placeholder="Ladda upp PDF" name="file">
           </div>
-        </div> -->
-        
+        </div>
+         -->
         <button class="btn waves-effect default #000000 addorder">Lägg till order</button>
 
         <button class="btn waves-effect default #000000 faded" type="submit">Gå vidare
