@@ -19,8 +19,8 @@ body {
 .side-nav {
     background-color:#131010;
     min-width: 300px;
-    z-index: 0; 
-    overflow-x: hidden; 
+    z-index: 0;
+    overflow-x: hidden;
 }
 
 /*Hover sidomenyknappar*/
@@ -63,7 +63,7 @@ ul a:hover, a:active {
     height: 64px;
     line-height: 64px;
     padding: 0px;
-}  
+}
 
 /*Sidomeny heading/länkar*/
 .side-nav h5 {
@@ -77,12 +77,12 @@ ul a:hover, a:active {
 }
 
 /*Styling nedre länkar i sidomeny*/
-.bottomlinks{ 
-    position: fixed; 
-    bottom: 0px; 
-    min-width: 300px; 
+.bottomlinks{
+    position: fixed;
+    bottom: 0px;
+    min-width: 300px;
 }
- 
+
 /*Logotyp*/
 .helens-logga {
     width:100%;
@@ -111,11 +111,6 @@ ul a:hover, a:active {
     margin-right: 25px;f
 }
 
-/*?*/
-.sidebar {
-    position:relative;
-}
-
 /*Innehåll*/
 .container {
     width: 100%;
@@ -128,7 +123,7 @@ ul a:hover, a:active {
     padding: 0;
     /*max-width: 900px;*/
     /*position: relative;*/
-    border: 1px solid red; 
+    border: 1px solid red;
 }
 
 /*Innehåll*/
@@ -136,6 +131,7 @@ ul a:hover, a:active {
     text-align: center;
     display: inline-block;
 }
+
 
 /* Titeltext */
 .title {
@@ -163,7 +159,7 @@ ul a:hover, a:active {
 
 /*Input styling END*/
 
-/*?*/ 
+/*?*/
 .topbar {
     width: 100%;
     height: 50px;
