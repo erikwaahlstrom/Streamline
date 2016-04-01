@@ -13,36 +13,38 @@
     <body>
         <!-- Sidenav: Sidmenyn för dashboard -->
     <div class="sidebar">
-        <ul id="slide-out" class="side-nav fixed">
-
+        <ul id="slide-out" class="side-nav fixed"> 
+     
         <!-- Heléns Logga -->
         <div class="logo-box">
           <div class="helens-logga">
             <img src="{{url('img/helens-logga.png')}}" class="logo">
           </div>
-        </div>
+        </div> 
         <!-- Logga End -->
-
-      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ny Leverantör</a></li>
-        <li><a href="#!"><i class="tiny material-icons">label_outline </i> Redigera Leverantörer</a></li>
-      <li><a href="#!"><i class="tiny material-icons">label_outline </i> Ankommande leveranser</a></li>
+<div class="toplinks">
+      <li><a href="#!"><i class="material-icons">toc</i>Ny Leverantör</a></li>
+        <li><a href="#!"><i class="material-icons">toc</i>Redigera Leverantörer</a></li>
+      <li><a href="#!"><i class="material-icons">toc</i>Ankommande leveranser</a></li>
+</div>
+    <div class="bottomlinks"> 
 
           <h5>Inloggad som <br>{{ $user->email }}</h5>
 
-      <div class="loggaut"><a href="{{url('/logout')}}"><i class="tiny material-icons">input</i> Logga Ut</a></div>
-
-      <div class="lang">
+      <li>  
+        <a href="{{url('/logout')}}"><i class="material-icons">input</i> Logga Ut</a> 
+      </li>
+       
         <li>
-          <a href="#"><i class="tiny material-icons">language</i>Språk</a>
+          <a href="#"><i class="material-icons">language</i>Språk</a>
         </li>
-      </div>
-    </div>
-
+        </div>
       </ul>
-
+    </div>
+  
       {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}}
 
-    </div>
+    <!-- </div> -->
     <!-- Sidenav end -->
 
         <!-- Container: Innehåll för dashboard -->

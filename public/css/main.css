@@ -18,15 +18,14 @@ body {
 /*Sidomeny box*/
 .side-nav {
     background-color:#131010;
-    width: 260px;
-    z-index: 0;
-    overflow-x: hidden;
-    height: 100%;
+    min-width: 300px;
+    z-index: 0; 
+    overflow-x: hidden; 
 }
 
 /*Hover sidomenyknappar*/
 ul a:hover, a:active {
-    border-left: 5px solid #5a9ad0;
+    border-left: 5px solid #005B92;
 }
 
 /*Logga ut knapp START*/
@@ -36,11 +35,7 @@ ul a:hover, a:active {
     width: 100%;
 }
 
-.side-nav.fixed > .loggaut a:hover {
-    font-weight: 900;
-    color: #fff;
-}
-
+/*Sidomeny länkar hover*/
 .side-nav.fixed li a:hover, a:active {
     font-weight: 900;
     color: #fff;
@@ -68,50 +63,26 @@ ul a:hover, a:active {
     height: 64px;
     line-height: 64px;
     padding: 0px;
-}
+}  
 
 /*Sidomeny heading/länkar*/
 .side-nav h5 {
-    font-weight: 900;
-    font-size: 16px;
-    margin-top: 55%;
+    margin-bottom: 2em;
+    font-size: inherit;
     width: 100%;
     height: 20px;
-    margin-left: 35px;
+    margin-left: 25px;
     color: #E9E1E1;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 
-/*First link sidomeny*/
-#toplink {
-    margin-top: 0.5em;
+/*Styling nedre länkar i sidomeny*/
+.bottomlinks{ 
+    position: fixed; 
+    bottom: 0px; 
+    min-width: 300px; 
 }
-
-#bottomlinks {
-    position: absolute;
-    bottom: 0px;
-}
-
-/*Språkknapp*/
-.lang {
-    /*width: 70%;
-    margin-left:14%;
-    height:64px;*/
-}
-
-/*Språkknapp hyperlänkar*/
-.side-nav.fixed > .lang a {
-    /*color: #E9E1E1;
-    background-color: #3D3B3B;
-    font-weight: 900;*/
-}
-
-/*Språkknapp hyperlänkar hover & active*/
-.side-nav.fixed > .lang a:hover, a:active {
-    font-weight: 900;
-    color: #fff;
-}
-
+ 
 /*Logotyp*/
 .helens-logga {
     width:100%;
@@ -137,7 +108,7 @@ ul a:hover, a:active {
 /*Materialize ikoner*/
 .material-icons {
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 25px;f
 }
 
 /*?*/
@@ -147,15 +118,17 @@ ul a:hover, a:active {
 
 /*Innehåll*/
 .container {
-    width: 90%;
-    overflow-y: auto;
-    /*height: calc(100%);*/
+    width: 100%;
+    float: left;
+    /*overflow-y: auto;*/
+    height: 100%;
     text-align: center;
-    display: table-cell;
-    margin-left: 25%;
-    max-width: 900px;
-    position: absolute;
-    border: 1px solid red;
+    /*display: table-cell;*/
+    margin: 0;
+    padding: 0;
+    /*max-width: 900px;*/
+    /*position: relative;*/
+    border: 1px solid red; 
 }
 
 /*Innehåll*/
@@ -170,9 +143,9 @@ ul a:hover, a:active {
 }
 
 /*Input styling START*/
-.input-field:first-child {
+/*.input-field:first-child {
   margin-top: 5%;
-}
+}*/
 
 .input-field {
     width: 30%;
@@ -190,7 +163,7 @@ ul a:hover, a:active {
 
 /*Input styling END*/
 
-/*?*/
+/*?*/ 
 .topbar {
     width: 100%;
     height: 50px;
