@@ -8,7 +8,7 @@
     {!! csrf_field() !!}
         <div class="input-field">
           <input id="datetimepicker" type="text" name="date">
-          <label for="datetimepicker">Datum & tid</label>
+          <label for="email">Datum & tid</label>
         </div>
 
         <div class="input-field">
@@ -65,7 +65,7 @@
             <input class="file-path validate" type="text" placeholder="Ladda upp PDF" name="file">
           </div>
         </div> -->
-
+        
         <button class="btn waves-effect default #000000 addorder">Lägg till order</button>
 
         <button class="btn waves-effect default #000000 faded" type="submit">Gå vidare

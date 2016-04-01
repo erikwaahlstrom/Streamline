@@ -88,4 +88,14 @@ class PageController extends Controller
       return view('registertransport');
     }
 
+    public function showCreateUserView()
+    {
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('createUser', compact('user'));
+    }
+
 }

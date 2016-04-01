@@ -43,7 +43,7 @@ Route::group(['middleware' => 'web'], function () {
     // Route::get('/register', 'PageController@showRegisterView');
     Route::get('/registertransport', 'PageController@showRegisterTransportView');
 
-
+        Route::post('/newsupplier', 'SupplierController@store');
     // Auth middleware routes
     // Route::group(['middleware' => 'auth', function() {
         Route::get('/dashboard', 'PageController@showDashboardView');
@@ -56,6 +56,7 @@ Route::group(['middleware' => 'web'], function () {
 
         Route::get('/deliveries', 'PageController@showDeliveriesView');
         Route::get('/edit', 'PageController@ShowEditView');
+        Route::get('/createUser', 'PageController@showCreateUserView');
     // }]);
 
 });
