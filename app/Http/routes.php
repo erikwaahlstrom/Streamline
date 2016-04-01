@@ -43,7 +43,7 @@ Route::group(['middleware' => 'web'], function () {
     // Route::get('/register', 'PageController@showRegisterView');
     Route::get('/registertransport', 'PageController@showRegisterTransportView');
 
-
+        Route::post('/newsupplier', 'SupplierController@store');
     // Auth middleware routes
     // Route::group(['middleware' => 'auth', function() {
         Route::get('/dashboard', 'PageController@showDashboardView');
