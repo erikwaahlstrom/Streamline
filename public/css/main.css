@@ -1,12 +1,10 @@
 html, body {
+    width: 100%;
     height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: table;
+    margin: 0 auto;
     font-weight: 100;
     font-family: 'Comfortaa';
 }
@@ -111,50 +109,58 @@ ul a:hover, a:active {
     margin-right: 25px;f
 }
 
-/*Innehåll*/
-.container {
-    width: 100%;
+/*?*/
+/*#slide-out {
     float: left;
-    /*overflow-y: auto;*/
-    height: 100%;
-    text-align: center;
-    /*display: table-cell;*/
-    margin: 0;
-    padding: 0;
-    /*max-width: 900px;*/
-    /*position: relative;*/
     border: 1px solid red;
+}*/
+
+.content {
+    width: 80%;
+    height: 100%;
+    float: left;
+    overflow-y : scroll;
 }
 
 /*Innehåll*/
-.content {
-    text-align: center;
-    display: inline-block;
+.container {
+    
+
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    float: left;
+
 }
 
 
 /* Titeltext */
 .title {
+    margin: 2rem 0 0 0;
     font-size: 50px;
+    text-align: center;
+    width: auto;
 }
 
-/*Input styling START*/
-/*.input-field:first-child {
-  margin-top: 5%;
-}*/
+/*Första input mellanrum mellan titel och formulär*/
+#topform{
+    margin-top: 3em;
+}
 
 .input-field {
     width: 30%;
     margin: 0 auto;
 }
 
-.input-form {
+/*.input-form {
     margin-top: 8%;
-}
+}*/
 
 .browser-default {
   margin-top: 10%;
-  margin-left: -2%
+  margin-left: -2%;
 }
 
 /*Input styling END*/
@@ -170,6 +176,9 @@ ul a:hover, a:active {
 /*Confirm knapp*/
 #confirmknapp {
     background-color: #005B92;
+    width: 200px;
+    height: 50px;
+    margin-top: 2em;
 }
 
 /* inputfields */

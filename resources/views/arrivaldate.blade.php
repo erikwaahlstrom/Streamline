@@ -2,11 +2,10 @@
 
 @section('content')
 
-<!-- <input type="date" class="datepicker"> -->
-  <div class="title">Boka ankomsttid</div>
-
-        <div class="input-field">
-          <input id="datetimepicker" type="text">
+      <div class="title">Boka ankomsttid</div>
+        <!-- form start -->
+        <div id="topform" class="input-field">
+          <input id="datetimepicker" type="text" class="validate">
           <label for="email">Datum & tid</label>
         </div>
 
@@ -55,6 +54,7 @@
           <label for="totalweight">Totalvikt</label>
         </div>
 
+        <!-- button -->
         <div class="file-field input-field">
           <div class="btn">
             <span>File</span>

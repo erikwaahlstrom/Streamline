@@ -11,12 +11,13 @@
     </head>
 
     <body>
-        <!-- Sidenav: Sidmenyn för dashboard -->
     <div class="sidebar">
+        <!-- Sidenav: Sidmenyn för dashboard -->
+    <!-- <div class="sidebar"> -->
         <ul id="slide-out" class="side-nav fixed"> 
      
         <!-- Heléns Logga -->
-        <div class="logo-box">
+        <div class="logo-box"> 
           <div class="helens-logga">
             <img src="{{url('img/helens-logga.png')}}" class="logo">
           </div>
@@ -41,14 +42,16 @@
         </div>
       </ul>
     </div>
+    <!-- </div> -->
   
-      {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}}
+      {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}} 
 
     <!-- </div> -->
     <!-- Sidenav end -->
 
         <!-- Container: Innehåll för dashboard -->
-        <div class="container">
+        
+        <div class="content">
             @yield('content')
         </div>
         <!-- Container end -->
