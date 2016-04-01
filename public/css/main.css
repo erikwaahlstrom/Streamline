@@ -155,7 +155,8 @@ ul a:hover, a:active {
     margin-left: 25%;
     max-width: 900px;
     position: absolute;
-    border: 1px solid red;
+    padding-bottom: 100px;
+    /*border: 1px solid red;*/
 }
 
 /*Innehåll*/
@@ -227,3 +228,15 @@ input#name.validate {
     border-bottom: 1px solid #005B92;
     box-shadow: none;
 }
+
+/*CSS för bokningsfomrulär*/
+
+.faded {
+    display: none;
+}
+
+.order {
+    margin-top: 50px;
+}
+
+/*CSS för bokningsfomrulär*/

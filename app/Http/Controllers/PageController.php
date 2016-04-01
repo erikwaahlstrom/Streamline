@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Auth;
+use App\Supplier;
 
 class PageController extends Controller
 {
@@ -21,6 +22,7 @@ class PageController extends Controller
         }
 
         $user = Auth::user();
+
         return view('dashboard', compact('user'));
     }
 
@@ -56,7 +58,9 @@ class PageController extends Controller
         }
 
         $user = Auth::user();
-        return view('arrivaldate', compact('user'));
+        $supplier = Supplier::findOrFail($user->supplier_id);
+
+        return view('arrivaldate', compact('user', 'supplier'));
     }
 
     public function showDeliveriesView()

@@ -53,6 +53,7 @@
 
 <script src="./jquery.js"></script>
 <script src="js/jquery.datetimepicker.full.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript">
   jQuery('#datetimepicker').datetimepicker();
 </script>
