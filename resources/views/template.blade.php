@@ -50,10 +50,11 @@
     <!-- Sidenav end -->
 
         <!-- Container: Innehåll för dashboard -->
-        
-        <div class="content">
+        <!-- <div class="container"> -->
+          <div class="content">
             @yield('content')
-        </div>
+          </div>
+        <!-- </div> -->
         <!-- Container end -->
 
 <script src="./jquery.js"></script>

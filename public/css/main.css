@@ -11,7 +11,14 @@ body {
 
 
 
-/*** Dashboard sidomeny START ***/
+/***Dashboard sidomeny***/
+
+/*Sidomeny*/
+.sidebar {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
 
 /*Sidomeny box*/
 .side-nav {
@@ -26,7 +33,7 @@ ul a:hover, a:active {
     border-left: 5px solid #005B92;
 }
 
-/*Logga ut knapp START*/
+/*Logga ut knapp*/
 .side-nav.fixed > .loggaut a {
     color: #E9E1E1;
     font-weight: 900;
@@ -39,8 +46,6 @@ ul a:hover, a:active {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
-
-/*Logga ut knapp END*/
 
 /*Första sidomeny länken*/
 .side-nav.fixed li a:first-child {
@@ -109,12 +114,12 @@ ul a:hover, a:active {
     margin-right: 25px;
 }
 
-/*?*/
-/*#slide-out {
-    float: left;
-    border: 1px solid red;
+/*** INNEHÅLL***/
+
+/*.container {
 }*/
 
+/*Innehåll*/
 .content {
     width: 80%;
     height: 100%;
@@ -123,46 +128,11 @@ ul a:hover, a:active {
 }
 
 /*Innehåll*/
-.container {
-
-}
-
-.sidebar {
-    width: 20%;
-    height: 100%;
-    float: left;
-
-}
-
-
-/* Titeltext */
-.title {
-    margin: 2rem 0 0 0;
-    font-size: 50px;
-    text-align: center;
-    width: auto;
-}
-
-/*Första input mellanrum mellan titel och formulär*/
-#topform{
-    margin-top: 3em;
-}
-
-.input-field {
-    width: 30%;
-    margin: 0 auto;
-}
-
-/*.input-form {
-    margin-top: 8%;
-}*/
 
 .browser-default {
   margin-top: 10%;
   margin-left: -2%;
 }
-
-/*Input styling END*/
 
 /*?*/
 .topbar {
@@ -172,37 +142,70 @@ ul a:hover, a:active {
     display: block;
 }
 
+
+
+/*** INPUT FORMULÄR ***/
+
+/*Centrerar input*/
+.input-field {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Titeltext*/
+.title {
+    margin: 2rem 0 0 0;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/*Formulär för inputfält*/
+.inputform {
+    width: 30%;
+    display: block;
+    margin: 2em auto 0 auto;
+}
+
+/*Stylar knappar*/
+
 /*Confirm knapp*/
-#confirmknapp {
+/*#confirmknapp {
     background-color: #005B92;
-    width: 200px;
+    width: auto;
     height: 50px;
     margin-top: 2em;
 }
 
-/* inputfields */
-#inputcolor {
-    color: #000000;
+#addsupplier{
+    background-color: #005B92;
+    width: auto;
+    height: 50px;
+    margin-top: 2em;
+}*/
+
+/*Lägg till pdf knapp*/
+#pdfinput{
+    margin: 2em 0em;
 }
 
-/* Input användarnamn/email */
-input#email.validate {
-    border-bottom: 1px solid #000000;
-    box-shadow: none;
+/*Stylar knappar efter inputfält*/
+.btn {
+    background-color: #005B92;
+    width: auto;
+    height: 50px;
+    margin-top: 2em;
 }
 
-/* Input password */
-input#password.validate {
-    border-bottom: 1px solid #000000;
-    box-shadow: none;
+.btn:hover {
+    background-color: #005B92;
 }
 
-/* Input name */
-input#name.validate {
-    border-bottom: 1px solid #000000;
-    box-shadow: none;
+/*Färg på inputfält-bottom-border*/
+.validate{
+    border-bottom: 1px solid #000000 !important;
+    box-shadow: none !important;
 }
-
 
 /*CSS för bokningsfomrulär*/
 
@@ -215,3 +218,8 @@ input#name.validate {
 }
 
 /*CSS för bokningsfomrulär*/
+
+/*Färg på inputfält-text*/
+.active{
+    color: #000000 !important;
+}

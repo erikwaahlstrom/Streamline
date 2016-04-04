@@ -4,7 +4,7 @@
 
 <!-- <input type="date" class="datepicker"> -->
 <div class="title">Boka Leverans</div>
-<form id="bookingform" class="form-horizontal" role="form" method="POST" action="{{ url('/newbooking') }}">
+<form id="bookingform" class="inputform" role="form" method="POST" action="{{ url('/newbooking') }}">
     {!! csrf_field() !!}
         <div class="input-field">
           <input id="datetimepicker" type="text" name="date">
@@ -57,6 +57,7 @@
         </div>
 
         <div class="file-field input-field">
+
           <div class="btn">
             <span>File</span>
             <input type="file" multiple>
@@ -74,3 +75,4 @@
 </form>
 
 @stop
+    

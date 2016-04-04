@@ -1,9 +1,7 @@
 @extends('template')
 
 @section('content')
-<div class="content z1-depth-3">
-    <div class="title">Lägg till leverantör</div><br>  
-
+<!-- <div class="content z1-depth-3"> -->
 {{-- <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
   {!! csrf_field() !!}
   <div class="row">
@@ -14,23 +12,20 @@
    </div>
  --}}
 
-<form class="form-horizontal" role="form" method="POST" action="{{ url('/newsupplier') }}">
+    <div class="title">Lägg till leverantör</div><br>  
+
+<form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
 
-        <div class="row">
         <div class="input-field">
-            <input id="name" type="text" name="supplier" class="validate">
-            <label for="name" id="inputcolor">Supplier</label>
-        </div>
+            <input type="text" name="supplier" class="validate">
+            <label for="name" class="active">Supplier</label>
         </div>
 
-        <div class="row">
         <div class="input-field">
-            <input id="name" type="text" name="email" class="validate">
-            <label for="email" id="inputcolor">Email</label>
+            <input type="text" name="email" class="validate">
+            <label for="email" class="active">Email</label>
         </div>
-        </div>
-
 
         <div class="input-field">
           <select class="browser-default" name="favorite">
@@ -40,14 +35,12 @@
           </select>
         </div>
 
-
         <br>
-        <button class="btn waves-effect default #000000" id="confirmknapp" type="submit">Skapa leverans
-          <i class="material-icons right">send</i>
+        <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Skapa leverans
+        <i class="material-icons right">send</i>
         </button>
+
 </form>
-
-
 
   {{--   <!-- Gentis gamla - Input Fields -->
   <form class="input-form" role="form" method="POST" action="{{ url('/newsupplier') }}">
@@ -85,9 +78,6 @@
 </button>
     </form>
 
-<<<<<<< Updated upstream
+
 </div> --}}
-=======
-</div>
->>>>>>> Stashed changes
 @stop
