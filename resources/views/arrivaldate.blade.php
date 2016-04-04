@@ -67,9 +67,10 @@
           </div>
         </div>
          -->
+        <button class="btn waves-effect default #000000 addarticle hide">Lägg till artikel</button>
         <button class="btn waves-effect default #000000 addorder">Lägg till order</button>
 
-        <button class="btn waves-effect default #000000 faded" type="submit">Gå vidare
+        <button class="btn waves-effect default #000000 hide bookingbtn" type="submit">Slutför bokning
           <i class="material-icons right">send</i>
         </button>
 </form>

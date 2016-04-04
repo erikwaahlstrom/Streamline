@@ -218,6 +218,22 @@ ul a:hover, a:active {
     margin-top: 50px;
 }
 
+.addorder {
+    margin-top: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.bookingbtn {
+    margin-top: 100px;
+}
+
 /*CSS för bokningsfomrulär*/
 
 /*Färg på inputfält-text*/
