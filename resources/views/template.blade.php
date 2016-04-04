@@ -12,9 +12,8 @@
 
     <body>
     <div class="sidebar">
-        <!-- Sidenav: Sidmenyn för dashboard -->
-    <!-- <div class="sidebar"> -->
-        <ul id="slide-out" class="side-nav fixed"> 
+    
+        <ul class="side-nav fixed"> 
      
         <!-- Heléns Logga -->
         <div class="logo-box"> 
@@ -40,14 +39,16 @@
           <a href="#"><i class="material-icons">language</i>Språk</a>
         </li>
         </div>
+        
       </ul>
+
     </div>
     <!-- </div> -->
   
       {{-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> --}} 
 
-    <!-- </div> -->
-    <!-- Sidenav end -->
+      <!-- </div> -->
+      <!-- Sidenav end -->
 
         <!-- Container: Innehåll för dashboard -->
         <!-- <div class="container"> -->
@@ -66,13 +67,13 @@
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-<!--
-      <script type="text/javascript">
+
+      <!--<script type="text/javascript">
         $('.datepicker').pickadate({
           selectMonths: true, // Creates a dropdown to control month
           selectYears: 15 // Creates a dropdown of 15 years to control year
         });
-      </script>
- -->
+      </script>-->
+ 
     </body>
 </html>

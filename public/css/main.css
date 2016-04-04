@@ -23,9 +23,9 @@ body {
 /*Sidomeny box*/
 .side-nav {
     background-color:#131010;
-    min-width: 300px;
-    z-index: 0;
-    overflow-x: hidden;
+    width: 20%;
+    height: 100%;
+    float: left;
 }
 
 /*Hover sidomenyknappar*/
@@ -83,7 +83,7 @@ ul a:hover, a:active {
 .bottomlinks{
     position: fixed;
     bottom: 0px;
-    min-width: 300px;
+    min-width: 20%;
 }
 
 /*Logotyp*/
@@ -116,15 +116,13 @@ ul a:hover, a:active {
 
 /*** INNEHÅLL***/
 
-/*.container {
-}*/
-
 /*Innehåll*/
 .content {
     width: 80%;
     height: 100%;
     float: left;
     overflow-y : scroll;
+    text-align: center;
 }
 
 /*Innehåll*/
@@ -195,6 +193,7 @@ ul a:hover, a:active {
     width: auto;
     height: 50px;
     margin-top: 2em;
+    float: left !important;
 }
 
 .btn:hover {
@@ -208,6 +207,11 @@ ul a:hover, a:active {
     box-shadow: none !important;
 }
 
+/*Färg på inputfält-text*/
+.active{
+    color: #000000 !important;
+}
+
 /*CSS för bokningsfomrulär*/
 
 .faded {
@@ -217,6 +221,8 @@ ul a:hover, a:active {
 .order {
     margin-top: 50px;
 }
+    
+
 
 .addorder {
     margin-top: 100px;
@@ -236,7 +242,25 @@ ul a:hover, a:active {
 
 /*CSS för bokningsfomrulär*/
 
-/*Färg på inputfält-text*/
-.active{
-    color: #000000 !important;
+/*Redigera leverantör*/
+.card{
+    background-color: #F4F5F5;
+    width: 30%;
+    text-align: left !important;
+    display: inline-block;
+    margin: 1em;
+    border-top: 5px solid #005B92;
 }
+
+.card a {
+    color: #000000 !important;
+    padding: 6px;
+}
+
+.card a:hover {
+    background-color: #E2E2E2;
+    color: #FFFFFF !important;
+}
+
+
+
