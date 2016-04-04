@@ -4,24 +4,31 @@
 
 
     <div class="title">Lägg till användare</div>
-      <form class="inputform">
+    
+    <form class="inputform" role="form" method="POST" action="{{ url('/register') }}">
+  {!! csrf_field() !!}
         
             <!-- form start -->
             <div class="input-field">
-              <input id="name" type="text" class="validate">
+              <input id="name" type="text" class="validate" name="name">
               <label for="name" class="active" id="inputcolor">Användare</label>
+            </div>
+
+            <div class="input-field">
+              <input id="email" type="email" class="validate" name="email">
+              <label for="email" class="active" id="inputcolor">Email</label>
             </div>
         
             <div class="input-field">
-              <input id="password" type="password" class="validate">
+              <input id="password" type="password" class="validate" name="password">
               <label for="password" class="active" id="inputcolor">Lösenord</label>
             </div>
 
             <div class="input-field">
-              <input id="email" type="email" class="validate">
-              <label for="email" class="active" id="inputcolor">Email</label>
+              <input id="reapeatpassword" type="password" class="validate" name="password_confirmation">
+              <label for="repeatpassword" class="active" id="inputcolor">Lösenord</label>
             </div>
-      
+   
               <div class="input-field">
                 <select class="browser-default">
               <option value="" disabled selected>Behörighet</option>
@@ -36,4 +43,6 @@
                 <i class="material-icons right">done</i>
               </button>
     </form>
+
+
 @stop

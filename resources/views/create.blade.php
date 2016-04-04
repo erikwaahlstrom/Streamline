@@ -1,24 +1,16 @@
 @extends('template')
 
 @section('content')
-<!-- <div class="content z1-depth-3"> -->
-{{-- <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-  {!! csrf_field() !!}
-  <div class="row">
-    <div class="input-field white-text text-darken-2">
-      <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}">
-      <label for="email" class="white-text text-darken-2">Användarnamn</label>
-    </div>
-   </div>
- --}}
+
 
     <div class="title">Lägg till leverantör</div><br>  
 
-<form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
+    <form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
 
+
         <div class="input-field">
-            <input type="text" name="supplier" class="validate">
+            <input type="text" name="name" class="validate">
             <label for="name" class="active">Supplier</label>
         </div>
 
@@ -29,9 +21,9 @@
 
         <div class="input-field">
           <select class="browser-default" name="favorite">
-              <option value="disabled selected">Favoritkund</option>
-              <option value="1">Ja</option>
-              <option value="2">Nej</option>
+              <option value="disabled selected">Bokningsmöjlighet</option>
+              <option value="24">24 h</option>
+              <option value="48">48 h</option>
           </select>
         </div>
 
@@ -80,4 +72,6 @@
 
 
 </div> --}}
+
+
 @stop

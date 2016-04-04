@@ -14,4 +14,7 @@ class Supplier extends Model
     protected $fillable = [
         'name', 'favorite',
     ];
+    public $timestamps = false;
 }
+
+
