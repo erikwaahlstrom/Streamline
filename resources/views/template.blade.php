@@ -18,14 +18,17 @@
         <!-- Heléns Logga -->
         <div class="logo-box"> 
           <div class="helens-logga">
-            <img src="{{url('img/helens-logga.png')}}" class="logo">
+            <img src="{{url('img/helens-logga.png')}}" href="dashboard" class="logo">
           </div>
         </div> 
         <!-- Logga End -->
 <div class="toplinks">
-      <li><a href="#!"><i class="material-icons">toc</i>Ny Leverantör</a></li>
-        <li><a href="#!"><i class="material-icons">toc</i>Redigera Leverantörer</a></li>
-      <li><a href="#!"><i class="material-icons">toc</i>Ankommande leveranser</a></li>
+      <li><a href="create"><i class="material-icons">perm_identity</i>Ny Leverantör</a></li>
+      <li><a href="createUser"><i class="material-icons">supervisor_account</i>Ny Personal</a></li>
+      <li><a href="edit"><i class="material-icons">mode_edit</i>Redigera Leverantörer</a></li>
+      <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
+      <li><a href="#!"><i class="material-icons">note_add</i>Boka Leverans</a></li>
+      <li><a href="#!"><i class="material-icons">description</i>Mina Bokningar</a></li>
 </div>
     <div class="bottomlinks"> 
 
