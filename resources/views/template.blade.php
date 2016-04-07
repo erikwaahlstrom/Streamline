@@ -18,7 +18,7 @@
         <!-- Heléns Logga -->
         <div class="logo-box"> 
           <div class="helens-logga">
-            <img src="{{url('img/helens-logga.png')}}" class="logo">
+            <img src="{{url('img/helens-logga.png')}}" class="logo" onclick="location.href='dashboard';">
           </div>
         </div> 
         <!-- Logga End -->
