@@ -6,7 +6,7 @@ html, body {
 body {
     margin: 0 auto;
     font-weight: 100;
-    font-family: 'Comfortaa';
+    font-family: 'Varela Round', sans-serif;
 }
 
 
@@ -23,13 +23,40 @@ body {
 /*Sidomeny box*/
 .side-nav {
     background-color:#131010;
-    width: 20%;
+    width: 280px;
     height: 100%;
     float: left;
+    overflow-x: hidden;
 }
 
-/*Hover sidomenyknappar*/
-ul a:hover, a:active {
+/*Sidomeny länkar*/
+.side-nav.fixed li {
+    color: #E9E1E1;
+    padding: 0px;
+    width: 280px;
+}
+
+/*Sidomeny länkar*/
+.side-nav.fixed li a {
+    color: #E9E1E1;
+    display: block;
+    font-size: 1rem;
+    vertical-align: middle;
+    padding: 0px;  
+    background-color:#131010;
+    -o-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -khtml-transition: background-color 0.3s linear;
+    -webkit-transition: background-color 0.3s linear;
+    -ms-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;               
+}
+
+/*Sidomeny länkar hover*/
+.side-nav.fixed li a:hover, a:active {
+    font-weight: 900;
+    color: #fff;
+    background-color: #423F3F;
     border-left: 5px solid #005B92;
 }
 
@@ -40,34 +67,6 @@ ul a:hover, a:active {
     width: 100%;
 }
 
-/*Sidomeny länkar hover*/
-.side-nav.fixed li a:hover, a:active {
-    font-weight: 900;
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-/*Första sidomeny länken*/
-.side-nav.fixed li a:first-child {
-    /*margin-top: 5%;*/
-}
-
-/*Sidomeny länkar*/
-.side-nav.fixed li {
-    color: #E9E1E1;
-    padding: 0px;
-}
-
-/*Sidomeny länkar*/
-.side-nav.fixed li a {
-    color: #E9E1E1;
-    display: block;
-    font-size: 1rem;
-    height: 64px;
-    line-height: 64px;
-    padding: 0px;
-}
-
 /*Sidomeny heading/länkar*/
 .side-nav h5 {
     margin-bottom: 2em;
@@ -76,14 +75,13 @@ ul a:hover, a:active {
     height: 20px;
     margin-left: 25px;
     color: #E9E1E1;
-    /*text-transform: capitalize;*/
+    text-transform: capitalize;
 }
 
 /*Styling nedre länkar i sidomeny*/
 .bottomlinks{
     position: fixed;
     bottom: 0px;
-    min-width: 20%;
 }
 
 /*Logotyp*/
@@ -110,8 +108,9 @@ ul a:hover, a:active {
 
 /*Materialize ikoner*/
 .material-icons {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 
 /*** INNEHÅLL***/
@@ -141,8 +140,8 @@ ul a:hover, a:active {
 }
 
 .browser-default {
-  margin-top: 10%;
-  margin-left: -2%;
+  margin: 1em auto;
+
 }
 
 /*?*/
@@ -179,6 +178,13 @@ ul a:hover, a:active {
     margin: 2em auto 0 auto;
 }
 
+/*Formulär för leverantörer*/
+#leveranserform{
+    width: 90%;
+    display: block;
+    margin: 2em auto 0 auto;
+}
+
 /*Stylar knappar*/
 
 /*Confirm knapp*/
@@ -206,7 +212,7 @@ ul a:hover, a:active {
     background-color: #005B92;
     width: auto;
     height: 50px;
-    margin-top: 2em;
+    margin-top: 1em;
     float: left !important;
 }
 
@@ -217,13 +223,13 @@ ul a:hover, a:active {
 
 /*Färg på inputfält-bottom-border*/
 .validate{
-    border-bottom: 1px solid #000000 !important;
+    border-bottom: 1px solid #b3b3b3 !important;
     box-shadow: none !important;
 }
 
 /*Färg på inputfält-text*/
 .active{
-    color: #000000 !important;
+    color: #b3b3b3 !important;
 }
 
 /*CSS för bokningsfomrulär*/

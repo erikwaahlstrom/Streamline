@@ -1,16 +1,17 @@
 @extends('template')
 
 @section('content')
-<div class="content">
-
+<!-- <div class="content"> -->
     <div class="title">Ankommande leveranser</div>
+
+    <form id="leveranserform" role="form" method="POST" action="">
 
     <table class="striped">
         <thead>
           <tr>
-              <th data-field="id">Transportör</th>
-              <th data-field="name">Leveranstid</th>
-              <th data-field="">Avlossningsplats</th>
+              <th data-field="supplier">Leverantör</th>
+              <th data-field="datetime">Datum & tid</th>
+              <th data-field="referencenumber">Referensnummer</th>
           </tr>
         </thead>
 
@@ -62,6 +63,5 @@
           </tr>
         </tbody>
       </table>
-
-</div>
+</form>
 @stop
