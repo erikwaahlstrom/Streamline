@@ -127,6 +127,19 @@ ul a:hover, a:active {
 
 /*Innehåll*/
 
+/*** VÄLKOMSTMEDDELANDE ***/
+/* Welcome-box styling*/
+.welcome-box {
+    width: 70%;
+    margin: 0 auto;
+    border: 4px solid #005B92;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(104,104,104,0.1);
+    box-shadow: 10px 10px 5px #888888;;
+}
+
 .browser-default {
   margin-top: 10%;
   margin-left: -2%;
@@ -156,6 +169,7 @@ ul a:hover, a:active {
     font-size: 50px;
     text-align: center;
     width: 100%;
+    padding-bottom: 3%;
 }
 
 /*Formulär för inputfält*/

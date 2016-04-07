@@ -16,9 +16,9 @@
         <ul class="side-nav fixed"> 
      
         <!-- Heléns Logga -->
-        <div class="logo-box"> 
+        <div class="logo-box"onclick="location.href='dashboard';"> 
           <div class="helens-logga">
-            <img src="{{url('img/helens-logga.png')}}" class="logo" onclick="location.href='dashboard';">
+            <img src="{{url('img/helens-logga.png')}}" class="logo">
           </div>
         </div> 
         <!-- Logga End -->
