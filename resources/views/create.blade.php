@@ -5,13 +5,19 @@
 
     <div class="title">Lägg till leverantör</div><br>  
 
+    @if (session('status'))
+    <div class="card-panel #66bb6a green lighten-1">
+        {{ session('status') }}
+    </div>
+    @endif
+
     <form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
 
 
         <div class="input-field">
             <input type="text" name="name" class="validate">
-            <label for="name" class="active">Supplier</label>
+            <label for="name" class="active">Leverantör</label>
         </div>
 
         <div class="input-field">
@@ -28,11 +34,14 @@
         </div>
 
         <br>
-        <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Skapa leverans
-        <i class="material-icons right">send</i>
+        <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Bekräfta
+        <i class="material-icons right">done</i>
         </button>
 
 </form>
+
+
+
 
   {{--   <!-- Gentis gamla - Input Fields -->
   <form class="input-form" role="form" method="POST" action="{{ url('/newsupplier') }}">

@@ -11,7 +11,7 @@
             <!-- form start -->
             <div class="input-field">
               <input id="name" type="text" class="validate" name="name">
-              <label for="name" class="active" id="inputcolor">Användare</label>
+              <label for="name" class="active" id="inputcolor">Användarnamn</label>
             </div>
 
             <div class="input-field">
@@ -24,17 +24,11 @@
               <label for="password" class="active" id="inputcolor">Lösenord</label>
             </div>
 
-            <div class="input-field">
-              <input id="reapeatpassword" type="password" class="validate" name="password_confirmation">
-              <label for="repeatpassword" class="active" id="inputcolor">Lösenord</label>
-            </div>
-   
               <div class="input-field">
                 <select class="browser-default">
               <option value="" disabled selected>Behörighet</option>
               <option value="1">Lagerchef (Alla behörigheter)</option>
-              <option value="2">Lagerpersonal (Tillgång till vissa delar)</option>
-              <option value="3">Godsmottagare (Endast tillgång till överblick)</option>
+              <option value="2">Lagerpersonal (Tillgång till granskning)</option>
                 </select>
               </div>
 
