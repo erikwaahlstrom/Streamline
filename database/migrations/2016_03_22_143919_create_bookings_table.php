@@ -17,6 +17,8 @@ class CreateBookingsTable extends Migration
             $table->string('date');
             $table->string('reference_number');
             $table->string('supplier_id');
+            $table->string('pdf_url');
+            $table->timestamps();
         });
     }
 

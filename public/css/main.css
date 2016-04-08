@@ -221,8 +221,14 @@ ul a:hover, a:active {
 .order {
     margin-top: 50px;
 }
-    
 
+.orderbox {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 20px;
+    min-height: 20px;
+    margin-bottom: 100px;
+}
 
 .addorder {
     margin-top: 100px;
@@ -238,6 +244,10 @@ ul a:hover, a:active {
 
 .bookingbtn {
     margin-top: 100px;
+}
+
+.file-field {
+    margin-bottom: 100px;
 }
 
 /*CSS för bokningsfomrulär*/
@@ -261,6 +271,3 @@ ul a:hover, a:active {
     background-color: #E2E2E2;
     color: #FFFFFF !important;
 }
-
-
-

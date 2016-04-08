@@ -12,7 +12,7 @@ class CreateBookingsOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookings_orders', function (Blueprint $table) {
+        Schema::create('booking_orders', function (Blueprint $table) {
             $table->string('booking_id');
             $table->string('order_id');
         });
@@ -25,6 +25,6 @@ class CreateBookingsOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('bookings_orders');
+        Schema::drop('booking_orders');
     }
 }

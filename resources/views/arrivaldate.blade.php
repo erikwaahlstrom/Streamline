@@ -4,7 +4,7 @@
 
 <!-- <input type="date" class="datepicker"> -->
 <div class="title">Boka Leverans</div>
-<form id="bookingform" class="inputform" role="form" method="POST" action="{{ url('/newbooking') }}">
+<form id="bookingform" class="inputform" role="form" method="POST" enctype="multipart/form-data" action="{{ url('/newbooking') }}">
     {!! csrf_field() !!}
         <div class="input-field">
           <input id="datetimepicker" type="text" name="date">
@@ -14,6 +14,16 @@
         <div class="input-field">
           <input id="supplier" type="text" value="{{ $supplier->name }}" class="validate" name="supplier_id">
           <label for="supplier">Leverantör</label>
+        </div>
+
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Pdf</span>
+            <input type="file" name="pdf">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Ladda upp pdf">
+          </div>
         </div>
 
         <!-- <div class="input-field">
@@ -76,4 +86,3 @@
 </form>
 
 @stop
-    

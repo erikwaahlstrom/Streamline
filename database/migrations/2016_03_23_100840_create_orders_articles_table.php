@@ -12,7 +12,7 @@ class CreateOrdersArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('orders_articles', function (Blueprint $table) {
+        Schema::create('order_articles', function (Blueprint $table) {
             $table->string('order_id');
             $table->string('article_id');
         });
@@ -25,6 +25,6 @@ class CreateOrdersArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('orders_articles');
+        Schema::drop('order_articles');
     }
 }
