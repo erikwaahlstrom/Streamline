@@ -13,12 +13,11 @@
 
     <body>
 
-    <div class="sidebar">
+  <!--   <div class="sidebar"> -->
     
         <ul class="side-nav fixed"> 
      
         <!-- Heléns Logga -->
-
         <div class="logo-box"onclick="location.href='dashboard';"> 
 
           <div class="helens-logga">
@@ -27,7 +26,6 @@
           </div>
 
         </div> 
-        
         <!-- Logga End -->
 <div class="toplinks">
         <!-- Sidmenyn för Speditör -->
@@ -48,6 +46,7 @@
 
       @endif 
 </div>
+
     <div class="bottomlinks"> 
 
           <h5>Inloggad som <br>{{ $user->email }}</h5>
@@ -59,7 +58,7 @@
         <li>
           <a href="#"><i class="material-icons">language</i>Språk</a>
         </li>
-        </div>
+    </div>
 
       </ul>
        <a href="" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
