@@ -34,8 +34,8 @@
         </div>
 
         <br>
-        <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Skapa leverans
-        <i class="material-icons right">send</i>
+        <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Bekräfta
+        <i class="material-icons right">done</i>
         </button>
 
 </form>
