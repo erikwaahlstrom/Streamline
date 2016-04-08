@@ -11,7 +11,7 @@
 
         <div class="input-field">
             <input type="text" name="name" class="validate">
-            <label for="name" class="active">Supplier</label>
+            <label for="name" class="active">Leverantör</label>
         </div>
 
         <div class="input-field">
