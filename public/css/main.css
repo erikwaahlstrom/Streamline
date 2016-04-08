@@ -279,10 +279,18 @@ body {
     padding: 6px;
 }
 
+.card-panel {
+    width: 40%;
+    margin: 0px auto;
+
+}
+
 .card a:hover {
     background-color: #E2E2E2;
     color: #FFFFFF !important;
 }
+
+
 
 
 
