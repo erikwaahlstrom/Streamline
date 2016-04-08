@@ -33,8 +33,7 @@
                 <select class="browser-default">
               <option value="" disabled selected>Behörighet</option>
               <option value="1">Lagerchef (Alla behörigheter)</option>
-              <option value="2">Lagerpersonal (Tillgång till vissa delar)</option>
-              <option value="3">Godsmottagare (Endast tillgång till överblick)</option>
+              <option value="2">Lagerpersonal (Tillgång till granskning)</option>
                 </select>
               </div>
 

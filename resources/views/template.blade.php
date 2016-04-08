@@ -30,12 +30,23 @@
         
         <!-- Logga End -->
 <div class="toplinks">
-      <li><a href="create"><i class="material-icons">perm_identity</i>Lägg till leverantör</a></li>
-      <li><a href="createUser"><i class="material-icons">supervisor_account</i>Lägg till personal</a></li>
-      <li><a href="edit"><i class="material-icons">mode_edit</i>Redigera Leverantörer</a></li>
-      <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
-      <li><a href="#!"><i class="material-icons">note_add</i>Boka Leverans</a></li>
-      <li><a href="#!"><i class="material-icons">description</i>Mina Bokningar</a></li>
+        <!-- Sidmenyn för Speditör -->
+      @if(Auth::user()->role == 1)
+    <li><a href="create"><i class="material-icons">perm_identity</i>Lägg till leverantör</a></li>
+    <li><a href="createUser"><i class="material-icons">supervisor_account</i>Lägg till personal</a></li>
+    <li><a href="edit"><i class="material-icons">mode_edit</i>Redigera Leverantörer</a></li>
+    <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
+
+        <!-- Sidmenyn för Leverantör -->
+      @elseif(Auth::user()->role == 2)
+    <li><a href="#!"><i class="material-icons">note_add</i>Boka Leverans</a></li>
+    <li><a href="#!"><i class="material-icons">description</i>Mina Bokningar</a></li>
+
+        <!-- Sidmenyn för Lagerpersonal -->
+      @elseif(Auth::user()->role == 3)
+    <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
+
+      @endif 
 </div>
     <div class="bottomlinks"> 
 
@@ -51,7 +62,7 @@
         </div>
 
       </ul>
-
+       <a href="" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
 
         <!-- Content start -->
