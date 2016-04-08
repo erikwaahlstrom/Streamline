@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 // use App\Http\Request;
 use App\Supplier;
 use App\User;
-
 use Illuminate\Support\Facades\Hash;
+use Mail;
 
 
 class SupplierController extends Controller
@@ -18,23 +18,40 @@ class SupplierController extends Controller
 
         $data = $request->all();
   
-        // Supplier::create($data);
-        // User::create($data);
+        $createsupplier = Supplier::create($data);
+ 
         
-
-		$hashed_random_password = Hash::make(str_random(8));
-		$data["password"] = $hashed_random_password;
+      $random_password = (str_random(8));
+		  $hashed_random_password = Hash::make($random_password);
+		  $data["password"] = $hashed_random_password;
 		// User::create($data);
 
-		$data["role"] = 2;
+		  $data["role"] = 2;
 		
+      $data["supplier_id"] = $createsupplier->id;
+      unset($data["name"]);
 
-
-      	return $data;
+         User::create($data);
 
       	// return back();
 
-    }
+        return redirect('create')->with('status', 'En ny leverantör har lagts till & ett mail med inloggningsupggifter har skickats.');
+
+
+
+       $emailTo = $data['email'];
+
+       $mailContent = 'Dina inloggningsuppgifter är följande:' . ' Email:' . $emailTo . ' ' . '& Lösenord:' . ' ' . $random_password;
+
+       Mail::raw($mailContent, function ($message) use($emailTo) {
+       $message->from('helensbokningssystem@gmail.com');
+       $message->to($emailTo);
+       $message->subject('Inloggningsuppgifter till Heléns Rör bokningssystem');
+
+
+
+    });
+
+} 
 
 }
-

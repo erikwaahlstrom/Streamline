@@ -5,6 +5,12 @@
 
     <div class="title">Lägg till leverantör</div><br>  
 
+    @if (session('status'))
+    <div class="card-panel #66bb6a green lighten-1">
+        {{ session('status') }}
+    </div>
+    @endif
+
     <form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
 
@@ -33,6 +39,9 @@
         </button>
 
 </form>
+
+
+
 
   {{--   <!-- Gentis gamla - Input Fields -->
   <form class="input-form" role="form" method="POST" action="{{ url('/newsupplier') }}">
