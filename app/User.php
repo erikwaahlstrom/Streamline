@@ -28,5 +28,5 @@ class User extends Authenticatable
 {
     return $this->hasOne('App\Supplier');
 }
-
+        public $timestamps = false;
 }
