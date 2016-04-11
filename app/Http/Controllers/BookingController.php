@@ -50,10 +50,12 @@ class BookingController extends Controller
 
         //Posta data för orders och articles
         foreach ($data['orders'] as $orderData) {
+            // Sätt total_weight
+            $totalWeight = 0;
             //Data för orders
             $order = [
                 'order_number' => $orderData['ordernummer'],
-                'total_weight' => '1000'
+                'total_weight' => $totalWeight
             ];
 
             $createdOrder = Order::create($order);
@@ -85,7 +87,14 @@ class BookingController extends Controller
                 ];
 
                 OrderArticle::create($orderArticle);
+
+                // Addera till total_weight
+                $intWeight = intval($articleData['weight']);
+                $totalWeight += $intWeight;
             }
+
+            $createdOrder['total_weight'] = $totalWeight;
+            $createdOrder->save();
         }
     }
 }
