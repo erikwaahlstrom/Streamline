@@ -54,7 +54,7 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('/newbooking', 'PageController@showArrivaldateView');
 
 
-        Route::get('/deliveries', 'PageController@showDeliveriesView');
+        Route::get('/deliveries', 'BookingController@index');
         Route::get('/edit', 'PageController@ShowEditView');
         Route::get('/createUser', 'PageController@showCreateUserView');
     // }]);

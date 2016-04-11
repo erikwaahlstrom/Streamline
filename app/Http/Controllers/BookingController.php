@@ -15,6 +15,24 @@ use App\BookingOrder;
 
 class BookingController extends Controller
 {
+    public function index()
+    {
+        $bookings = Booking::orderBy('date', 'asc')->get();
+
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+
+        foreach ($bookings as $booking) {
+            $booking['supplier'] = Supplier::findOrFail($booking['supplier_id']);
+        }
+        // return $bookings;
+
+        return view('deliveries', compact('bookings', 'user'));
+    }
+
     public function store(Request $request)
     {
         //Sätt data som ska postas

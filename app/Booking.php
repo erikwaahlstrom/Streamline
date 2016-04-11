@@ -14,4 +14,9 @@ class Booking extends Model
     protected $fillable = [
         'date', 'reference_number', 'supplier_id', 'pdf_url'
     ];
+
+    public function supplier()
+    {
+        return $this->hasOne('App\Supplier', 'supplier_id');
+    }
 }

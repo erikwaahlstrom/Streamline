@@ -15,6 +15,5 @@ class Supplier extends Model
         'name', 'favorite',
     ];
     public $timestamps = false;
+
 }
-
-

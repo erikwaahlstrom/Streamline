@@ -9,58 +9,26 @@
     <table class="striped">
         <thead>
           <tr>
+              <th data-field="referencenumber">Referensnummer</th>
               <th data-field="supplier">Leverantör</th>
               <th data-field="datetime">Datum & tid</th>
-              <th data-field="referencenumber">Referensnummer</th>
+              <th data-field="dropspot">Avlossningsplats</th>
+              <th data-field="pdf">Pdf</th>
+              <th data-field="radera">Avboka leverans</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td>Wohlfarths åkeri AB</td>
-            <td>09:00</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Wahlströms Leveranser AB</td>
-            <td>09:30</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Gentians Budbil AB</td>
-            <td>11:30</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>LKW Walter</td>
-            <td>12:30</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Åkes åkeri</td>
-            <td>13:30</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Åkes åkeri</td>
-            <td>14:30</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Åkes åkeri</td>
-            <td>15:00</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Åkes åkeri</td>
-            <td>15:30</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Åkes åkeri</td>
-            <td>16:00</td>
-            <td>3</td>
-          </tr>
+            @foreach($bookings as $booking)
+                <tr>
+                    <td>{{ $booking->reference_number }}</td>
+                    <td>{{ $booking->supplier->name }}</td>
+                    <td>{{ $booking->date }}</td>
+                    <td>Avlossningsplats</td>
+                    <td><a href="{{ $booking->pdf_url }}">Pdf-fil</a></td>
+                    <td>Radera</td>
+                </tr>
+            @endforeach
         </tbody>
       </table>
 </form>
