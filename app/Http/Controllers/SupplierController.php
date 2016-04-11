@@ -20,12 +20,12 @@ class SupplierController extends Controller
   
         $createsupplier = Supplier::create($data);
  
-        
+      //skapar ett random lösenord till användaren
       $random_password = (str_random(8));
 		  $hashed_random_password = Hash::make($random_password);
 		  $data["password"] = $hashed_random_password;
-		// User::create($data);
-
+		
+      //leverantör
 		  $data["role"] = 2;
 		
       $data["supplier_id"] = $createsupplier->id;
@@ -33,12 +33,12 @@ class SupplierController extends Controller
 
          User::create($data);
 
-      	// return back();
 
+        //Ger användaren feedback
         return redirect('create')->with('status', 'En ny leverantör har lagts till & ett mail med inloggningsupggifter har skickats.');
 
 
-
+      //Skickar mail med inloggningsuppgifter
        $emailTo = $data['email'];
 
        $mailContent = 'Dina inloggningsuppgifter är följande:' . ' Email:' . $emailTo . ' ' . '& Lösenord:' . ' ' . $random_password;
