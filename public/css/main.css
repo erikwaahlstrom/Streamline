@@ -48,7 +48,7 @@ body {
 .side-nav.fixed li a:hover, a:active {
     font-weight: 900;
     color: #fff;
-    background-color: #423F3F;
+    background-color: #2b2b2b;
     border-left: 5px solid #005B92;
 }
 
@@ -105,7 +105,7 @@ body {
     vertical-align: middle;
 }
 
-/*** INNEHÅLL***/
+/*** INNEHÅLL***/ 
 
 /*Innehåll*/
 .content {
@@ -173,7 +173,7 @@ body {
 /*Stylar knappar*/
 
 /*Lägg till pdf knapp*/
-#pdfinput {
+#pdfinput {  
     margin: 2em 0em;
 }
 
@@ -190,6 +190,9 @@ body {
     background-color: #005B92;
 }
 
+.btn:focus {
+    background-color: #005B92;
+}
 
 /*Färg på inputfält-bottom-border*/
 .validate {
@@ -258,11 +261,12 @@ body {
 }
 
 .card-panel {
-    width: 40%;
+    color: #fff;
+    width: 40%; 
     margin: 0px auto;
 
 }
-
+ 
 .card a:hover {
     background-color: #E2E2E2;
     color: #FFFFFF !important;

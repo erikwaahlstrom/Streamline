@@ -8,7 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link href="{{ url('css/main.css') }}" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
     </head>
 
     <body onload="Materialize.fadeInImage('.content')">
@@ -27,6 +27,7 @@
 
         </div>
         <!-- Logga End -->
+
 <div class="toplinks">
         <!-- Sidmenyn för Speditör -->
       @if(Auth::user()->role == 1)
@@ -58,10 +59,13 @@
         <li>
           <a href="#"><i class="material-icons">language</i>Språk</a>
         </li>
+
     </div>
 
-      </ul>
+      </ul> 
+
        <a href="" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
     </div>
 
         <!-- Content start -->
@@ -70,15 +74,24 @@
           </div>
         <!-- Content end -->
 
-<script src="./jquery.js"></script>
-<script src="js/jquery.datetimepicker.full.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
+<!-- Jquery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- Datetimepicker -->
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+
+<!-- Materialize javascript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<!-- Jquery datetimepicker -->
 <script type="text/javascript">
   jQuery('#datetimepicker').datetimepicker();
 </script>
+
+<!-- Main javascript -->
+<script type="text/javascript" src="js/main.js"></script>
 
     </body>
 </html>

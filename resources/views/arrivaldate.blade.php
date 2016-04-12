@@ -7,7 +7,7 @@
 <form id="bookingform" class="inputform" role="form" method="POST" enctype="multipart/form-data" action="{{ url('/newbooking') }}">
     {!! csrf_field() !!}
         <div class="input-field">
-          <input id="datetimepicker" type="text" name="date">
+          <input id="datetimepicker" type="text" class="validate" name="date">
           <label for="email">Datum & tid</label>
         </div>
 
@@ -75,8 +75,8 @@
           <div class="file-path-wrapper">
             <input class="file-path validate" type="text" placeholder="Ladda upp PDF" name="file">
           </div>
-        </div>
-         -->
+        </div>-->
+        
         <button class="btn waves-effect default #000000 addarticle hide">Lägg till artikel</button>
         <button class="btn waves-effect default #000000 addorder">Lägg till order</button>
 
