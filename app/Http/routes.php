@@ -60,4 +60,7 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('/createUser', 'PageController@showCreateUserView');
     // }]);
 
+        Route::post('/deletebooking', 'BookingController@delete');
+        Route::post('/setdropplace', 'BookingController@update');
+
 });

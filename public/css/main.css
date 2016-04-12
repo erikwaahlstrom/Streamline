@@ -267,3 +267,22 @@ body {
     background-color: #E2E2E2;
     color: #FFFFFF !important;
 }
+
+/*Style för deliveries vyn*/
+
+.deletebtn {
+    background-color: #f7193a;
+    height: 40px;
+    margin: 0;
+}
+
+.deletebtn:hover {
+    background-color: #ff4763;
+}
+
+.pdfbtn {
+    margin: 0;
+    height: 40px;
+}
+
+/*Style för deliveries vyn*/

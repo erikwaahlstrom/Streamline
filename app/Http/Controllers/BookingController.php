@@ -115,4 +115,23 @@ class BookingController extends Controller
             $createdOrder->save();
         }
     }
+
+    public function delete(Request $request)
+    {
+        $data = $request->all();
+        Booking::destroy($data['booking_id']);
+
+        return redirect('/deliveries');
+    }
+
+    public function update(Request $request)
+    {
+        $data = $request->all();
+
+        $booking = Booking::findOrFail($data['booking_id']);
+        $booking->drop_place = $data['drop_place'];
+        $booking->save();
+
+        return redirect('/deliveries');
+    }
 }

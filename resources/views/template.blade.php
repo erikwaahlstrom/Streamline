@@ -11,21 +11,21 @@
         <link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
     </head>
 
-    <body>
+    <body onload="Materialize.fadeInImage('.content')">
 
   <!--   <div class="sidebar"> -->
-    
-        <ul class="side-nav fixed"> 
-     
+
+        <ul class="side-nav fixed">
+
         <!-- Heléns Logga -->
-        <div class="logo-box"onclick="location.href='dashboard';"> 
+        <div class="logo-box"onclick="location.href='dashboard';">
 
           <div class="helens-logga">
 
             <img src="{{url('img/helens-logga.png')}}" class="logo">
           </div>
 
-        </div> 
+        </div>
         <!-- Logga End -->
 <div class="toplinks">
         <!-- Sidmenyn för Speditör -->
@@ -44,17 +44,17 @@
       @elseif(Auth::user()->role == 3)
     <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
 
-      @endif 
+      @endif
 </div>
 
-    <div class="bottomlinks"> 
+    <div class="bottomlinks">
 
           <h5>Inloggad som <br>{{ $user->email }}</h5>
 
-      <li>  
-        <a href="{{url('/logout')}}"><i class="material-icons">input</i> Logga Ut</a> 
+      <li>
+        <a href="{{url('/logout')}}"><i class="material-icons">input</i> Logga Ut</a>
       </li>
-       
+
         <li>
           <a href="#"><i class="material-icons">language</i>Språk</a>
         </li>

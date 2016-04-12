@@ -2,8 +2,8 @@
 
 @section('content')
 
-    
-    <div class="title">Lägg till användare</div>
+
+    <div class="title">Lägg till personal</div>
 
     <!-- Feedback-message -->
     @if (session('status'))
@@ -11,16 +11,16 @@
         {{ session('status') }}
       </div>
     @endif
-    
+
     <form class="inputform" role="form" method="POST" action="{{ url('/newuser') }}">
   {!! csrf_field() !!}
-        
+
             <!-- form start -->
             <div class="input-field">
               <input id="email" type="email" class="validate" name="email">
               <label for="email" class="active" id="inputcolor">Email</label>
             </div>
-        
+
             <div class="input-field">
               <input id="password" type="password" class="validate" name="password">
               <label for="password" class="active" id="inputcolor">Lösenord</label>
