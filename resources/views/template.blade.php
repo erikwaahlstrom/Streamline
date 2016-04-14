@@ -62,7 +62,7 @@
 
     </div>
 
-      </ul> 
+      </ul>
 
        <a href="" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
@@ -87,7 +87,26 @@
 
 <!-- Jquery datetimepicker -->
 <script type="text/javascript">
-  jQuery('#datetimepicker').datetimepicker();
+
+var supplierFavorite = $('#datetimepicker').data("favorite");
+// console.log(supplierFavorite);
+var logic = function(){
+    if(supplierFavorite == 24){
+        this.setOptions({
+          minDate:'+1970/01/02'
+        });
+    }
+};
+
+  jQuery('#datetimepicker').datetimepicker({
+      allowTimes:[
+          '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00'
+        ],
+      minDate: '+1970/01/03',
+      maxDate: '+1970/01/30',
+      onChangeDateTime:logic,
+      onShow:logic
+  });
 </script>
 
 <!-- Main javascript -->
