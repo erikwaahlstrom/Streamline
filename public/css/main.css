@@ -52,6 +52,30 @@ body {
     border-left: 5px solid #005B92;
 }
 
+/*Dropdown meny*/
+
+.dropdown-content li > a, .dropdown-content li > span
+{
+  color: #fff;
+}
+
+.dropdown-content a:hover, a:active {
+    font-weight: 900;
+    color: #fff;
+    background-color: #423F3F;
+    border-left: 5px solid #005B92;
+}
+
+.dropdown-content li {
+  text-align: center;
+  background-color:#131010;
+}
+
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected
+{
+  background-color: #131010;
+}
+
 /*Logga ut knapp*/
 .side-nav.fixed > .loggaut a {
     color: #E9E1E1;
@@ -118,26 +142,43 @@ body {
     margin: 0px auto;
 }
 
+@media only screen and (max-width : 1000px) {
+      .content {
+        padding-left: 50px;
+
+}
+}
 /*Innehåll*/
 
 /*** VÄLKOMSTMEDDELANDE ***/
 
 /* Welcome-box styling*/
 .welcome-box {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
-    border: 4px solid #005B92;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgba(104,104,104,0.1);
-    box-shadow: 10px 10px 5px #888888;;
+}
+
+.welcome-box:before, .welcome-box:after {
+    content: "";
+    height: 1px;
+    /* I've removed the vendor prefixes, if you are looking to support older browsers
+       then refer to older version of this answer.
+    */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(145,131,131,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .browser-default {
   margin: 1em auto;
 
 }
+
+.content-welcome {
+    padding: 5px 10px;
+}
+/* Welcome-box END */
 
 /*** INPUT FORMULÄR ***/
 
