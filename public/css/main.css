@@ -129,7 +129,7 @@ body {
     vertical-align: middle;
 }
 
-/*** INNEHÅLL***/ 
+/*** INNEHÅLL***/
 
 /*Innehåll*/
 .content {
@@ -214,7 +214,7 @@ body {
 /*Stylar knappar*/
 
 /*Lägg till pdf knapp*/
-#pdfinput {  
+#pdfinput {
     margin: 2em 0em;
 }
 
@@ -294,6 +294,7 @@ body {
     display: inline-block;
     margin: 1em;
     border-top: 5px solid #005B92;
+    padding-bottom: 20px;
 }
 
 .card a {
@@ -303,11 +304,11 @@ body {
 
 .card-panel {
     color: #fff;
-    width: 40%; 
+    width: 40%;
     margin: 0px auto;
 
 }
- 
+
 .card a:hover {
     background-color: #E2E2E2;
     color: #FFFFFF !important;

@@ -17,21 +17,21 @@ class SupplierController extends Controller
     {
 
         $data = $request->all();
-  
-        $createsupplier = Supplier::create($data);
- 
-      //skapar ett random lösenord till användaren
-      $random_password = (str_random(8));
-		  $hashed_random_password = Hash::make($random_password);
-		  $data["password"] = $hashed_random_password;
-		
-      //leverantör
-		  $data["role"] = 2;
-		
-      $data["supplier_id"] = $createsupplier->id;
-      unset($data["name"]);
 
-         User::create($data);
+        $createsupplier = Supplier::create($data);
+
+		//skapar ett random lösenord till användaren
+		$random_password = (str_random(8));
+		$hashed_random_password = Hash::make($random_password);
+		$data["password"] = $hashed_random_password;
+
+		//leverantör
+		$data["role"] = 2;
+
+		$data["supplier_id"] = $createsupplier->id;
+		unset($data["name"]);
+		// return $data;
+		User::create($data);
 
 
         //Ger användaren feedback
@@ -52,6 +52,6 @@ class SupplierController extends Controller
 
     });
 
-} 
+}
 
 }

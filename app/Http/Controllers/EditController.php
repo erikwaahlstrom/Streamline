@@ -40,11 +40,11 @@ class EditController extends Controller
 
         $suppliers = Supplier::all();
         $suppliers->favorite = $data['favorite'];
-        $suppliers->save();
+        // $suppliers->save();
 
         return redirect('/edit');
     }
 
 
-    
+
 }

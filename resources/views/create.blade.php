@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <div class="title">Lägg till leverantör</div><br>  
+    <div class="title">Lägg till leverantör</div><br>
 
     @if (session('status'))
     <div class="card-panel #66bb6a green lighten-1">
@@ -17,11 +17,12 @@
 
         <div class="input-field">
             <input type="text" name="name" class="validate">
-            <label for="name" data-error="wrong" data-success="right" class="active">Leverantör</label>
+            <!-- data-error="wrong" data-success="right" -->
+            <label for="name" class="active">Leverantör</label>
         </div>
 
-        <div class="input-field"> 
-            <input id="email" type="email" class="validate">
+        <div class="input-field">
+            <input id="email" type="email" class="validate" name="email">
             <label for="email" data-error="wrong" data-success="right" class="active">Email</label>
         </div>
 
@@ -32,7 +33,7 @@
               <option value="48">48 h</option>
           </select>
         </div>
- 
+
         <br>
         <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Bekräfta
         <i class="material-icons right">send</i>
