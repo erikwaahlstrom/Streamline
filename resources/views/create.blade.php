@@ -17,25 +17,25 @@
 
         <div class="input-field">
             <input type="text" name="name" class="validate">
-            <label for="name" class="active">Leverantör</label>
+            <label for="name" data-error="wrong" data-success="right" class="active">Leverantör</label>
+        </div>
+
+        <div class="input-field"> 
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right" class="active">Email</label>
         </div>
 
         <div class="input-field">
-            <input type="text" name="email" class="validate">
-            <label for="email" class="active">Email</label>
-        </div>
-
-        <div class="input-field">
-          <select class="browser-default" name="favorite">
-              <option value="disabled selected">Bokningsmöjlighet</option>
+          <select class="browser-default" browser-default name="favorite">
+              <option value=""disabled selected>Bokningsmöjlighet</option>
               <option value="24">24 h</option>
               <option value="48">48 h</option>
           </select>
         </div>
-
+ 
         <br>
         <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Bekräfta
-        <i class="material-icons right">done</i>
+        <i class="material-icons right">send</i>
         </button>
 
 </form>

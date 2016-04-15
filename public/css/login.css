@@ -8,14 +8,13 @@ body {
     padding: 0;
     width: 100%;
     display: table;
-    font-weight: 100;
-    font-family: 'Lato';
+    font-family: 'Varela Round', sans-serif;
 }
-
+ 
 .container {
     text-align: center;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle; 
 }
 
 .content {
@@ -67,6 +66,7 @@ input#reapeatpassword.validate {
 /* Loginknapp */
 #loginknapp {
     color: #5A9AD0;
+    font-weight: 700;
     width: 200px;
     height: 50px;
 }

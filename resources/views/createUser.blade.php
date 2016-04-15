@@ -44,6 +44,7 @@
         <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Bekräfta
         <i class="material-icons right">send</i>
         </button>
+
     </form>
 
 

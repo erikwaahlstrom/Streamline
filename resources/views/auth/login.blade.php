@@ -8,7 +8,7 @@
   <div class="row">
     <div class="input-field white-text text-darken-2">
       <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}">
-      <label for="email" class="white-text text-darken-2">Användarnamn</label>
+      <label for="email" class="white-text text-darken-2">Email</label>
     </div>
    </div>
 
