@@ -45,6 +45,7 @@ Route::group(['middleware' => 'web'], function () {
 
         Route::post('/newsupplier', 'SupplierController@store');
         Route::post('/newuser', 'UserController@store');
+        Route::get('/edit', 'EditController@index');
     // Auth middleware routes
     // Route::group(['middleware' => 'auth', function() {
         Route::get('/dashboard', 'PageController@showDashboardView');
@@ -55,12 +56,16 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('/newbooking', 'PageController@showArrivaldateView');
 
 
+
         Route::get('/deliveries', 'BookingController@index');
-        Route::get('/edit', 'PageController@ShowEditView');
+
         Route::get('/createUser', 'PageController@showCreateUserView');
     // }]);
 
         Route::post('/deletebooking', 'BookingController@delete');
         Route::post('/setdropplace', 'BookingController@update');
+
+        Route::post('/deletesupplier', 'EditController@delete');
+        Route::post('/editsupplier', 'EditController@update');
 
 });
