@@ -109,6 +109,9 @@
 
 <!-- Jquery -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+<!-- Jquery validation -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 
 <!-- Datetimepicker -->
 <script type="text/javascript" src="./jquery.js"></script>

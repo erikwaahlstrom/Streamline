@@ -60,4 +60,12 @@ $(document).ready(function(){
     //    $(articleInput).insertBefore(this);
     //    articleCount++;
     // });
+
+
+    /*Validation*/
+    
+    
+
+
+
 });
