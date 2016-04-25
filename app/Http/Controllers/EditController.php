@@ -25,26 +25,24 @@ class EditController extends Controller
 	    return view('edit', compact('suppliers', 'user'));
 
 	    }
-	    	//Radera användare
-	        public function delete(Request $request)
+	//Radera användare
+	public function delete(Request $request)
     {
         $data = $request->all();
         Supplier::destroy($data['id']);
 
         return redirect('/edit');
     }
-    	//Uppdatera användare
-        public function update(Request $request)
+    //Uppdatera användare
+    public function update(Request $request)
     {
         $data = $request->all();
 
-        $suppliers = Supplier::all();
+        $suppliers = Supplier::findOrFail($data['id']);
         $suppliers->favorite = $data['favorite'];
-        // $suppliers->save();
+        $suppliers->save();
 
         return redirect('/edit');
     }
-
-
 
 }
