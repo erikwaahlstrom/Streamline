@@ -62,8 +62,8 @@
     </div>
 
       </ul>
-        <!-- Dropdown Trigger -->
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1' style="width: 150px; text-align: center; margin-top: 0px;">Meny</a>
+         <!-- Dropdown Trigger -->
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">Meny</a>
 
         <!-- Dropdown Structure -->
       <ul id='dropdown1' class='dropdown-content'>
@@ -119,6 +119,20 @@
 
 <!-- Materialize javascript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<!-- Materialize Dropdown -->
+<script>
+$('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: false, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+</script>
 
 <!-- Jquery datetimepicker -->
 <script type="text/javascript">

@@ -54,6 +54,24 @@ body {
 
 /*Dropdown meny*/
 
+a.dropdown-button.btn {
+    text-align: center; 
+    margin-top: 0px;
+    height:40px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+a.dropdown-button.btn:hover, .dropdown-button.btn:active {
+    border-left: none;
+}
+
+
+@media only screen and (max-width : 1000px) {
+      a.dropdown-button.btn {
+        width: 100%;
+    }
+}
+
 .dropdown-content li > a, .dropdown-content li > span
 {
   color: #fff;
@@ -63,7 +81,7 @@ body {
     font-weight: 900;
     color: #fff;
     background-color: #423F3F;
-    border-left: 5px solid #005B92;
+    
 }
 
 .dropdown-content li {
@@ -114,6 +132,7 @@ body {
     width:100%;
     height: 100px;
     background-color: #005B92;
+    top: 0px;
 }
 
 /*Logotyp box*/
