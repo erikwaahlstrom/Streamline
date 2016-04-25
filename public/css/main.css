@@ -351,3 +351,7 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 }
 
 /*Style för deliveries vyn*/
+.striped {
+    width: 98%;
+    margin: 0px auto;
+}
