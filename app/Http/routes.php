@@ -67,5 +67,6 @@ Route::group(['middleware' => 'web'], function () {
 
         Route::post('/deletesupplier', 'EditController@delete');
         Route::post('/editsupplier', 'EditController@update');
+        Route::post('/searchsupplier', 'EditController@search');
 
 });

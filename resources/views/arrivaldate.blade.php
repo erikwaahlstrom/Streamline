@@ -83,6 +83,7 @@
         <button class="btn waves-effect default #000000 hide bookingbtn" type="submit">Slutför bokning
           <i class="material-icons right">send</i>
         </button>
+        <button class="btn waves-effect default #000000 deletebtn" onclick="location.reload()">Avbryt bokning</button>
 </form>
 
 
