@@ -4,6 +4,11 @@
 
 <!-- <input type="date" class="datepicker"> -->
 <div class="title">Boka Leverans</div>
+@if (session('status'))
+<div class="card-panel #66bb6a green lighten-1">
+    {{ session('status') }}
+</div>
+@endif
 <form id="bookingform" class="inputform" role="form" method="POST" enctype="multipart/form-data" action="{{ url('/newbooking') }}">
     {!! csrf_field() !!}
         <div class="input-field">

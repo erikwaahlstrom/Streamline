@@ -34,9 +34,6 @@ class SupplierController extends Controller
 		User::create($data);
 
 
-        //Ger användaren feedback
-        return redirect('create')->with('status', 'En ny leverantör har lagts till & ett mail med inloggningsupggifter har skickats.');
-
 
       //Skickar mail med inloggningsuppgifter
        $emailTo = $data['email'];
@@ -52,6 +49,8 @@ class SupplierController extends Controller
 
     });
 
+	//Ger användaren feedback
+	return redirect('create')->with('status', 'En ny leverantör har lagts till & ett mail med inloggningsupggifter har skickats.');
 }
 
 }

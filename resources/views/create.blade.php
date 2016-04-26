@@ -10,13 +10,13 @@
         {{ session('status') }}
     </div>
     @endif
- 
+
     <!--CREATE-->
     <form id="create" class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
 
       <div>
-        <input name="uname" placeholder="Lägg till leverantör" type="text" class="validate">
+        <input name="name" placeholder="Lägg till leverantör" type="text" class="validate">
       </div>
 
       <div>
@@ -49,7 +49,7 @@
             <label for="name" data-error="wrong" data-success="right" class="active">Leverantör</label>
         </div>
 
-        <div class="input-field"> 
+        <div class="input-field">
             <input id="email" type="email" class="validate" name="email">
             <label for="email" data-error="wrong" data-success="right" class="active">Email</label>
         </div>

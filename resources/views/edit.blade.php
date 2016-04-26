@@ -4,12 +4,13 @@
 
     <div class="container">
         <form method="POST" action="{{ url('/searchsupplier') }}">
+            {!! csrf_field() !!}
             <div class="input-field">
               <input id="search" type="text" class="validate" name="search">
               <label for="search">Sök leverantörer...</label>
             </div>
             <button class="btn waves-effect default #000000 searchbtn" type="submit">Sök</button>
-        <form>
+        </form>
     </div>
 
     @if (session('error'))

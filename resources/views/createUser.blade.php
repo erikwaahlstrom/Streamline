@@ -16,7 +16,7 @@
     <form id="createUser" class="inputform" role="form" method="POST" action="{{ url('/newuser') }}">
     {!! csrf_field() !!}
 
-            <div> 
+            <div>
               <input name="email"  placeholder="Email" type="text" class="validate">
             </div>
 
@@ -25,7 +25,7 @@
             </div>
 
             <div>
-              <input name="cpassword"  placeholder="Bekräfta lösenord" type="password" class="validate">
+              <input name="password_confirmation"  placeholder="Bekräfta lösenord" type="password" class="validate">
             </div>
 
               <div class="input-field">
@@ -45,7 +45,7 @@
    <!--  <form class="inputform" role="form" method="POST" action="{{ url('/newuser') }}">
   {!! csrf_field() !!}
 
-            <div class="input-field"> 
+            <div class="input-field">
               <input id="email" type="email" class="validate" name="email">
               <label for="email" data-error="wrong" data-success="right" class="active">Email</label>
             </div>

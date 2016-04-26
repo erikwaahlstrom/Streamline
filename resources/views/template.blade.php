@@ -34,7 +34,7 @@
     <li><a href="create"><i class="material-icons">perm_identity</i>Lägg till leverantör</a></li>
     <li><a href="edit"><i class="material-icons">mode_edit</i>Redigera Leverantörer</a></li>
     <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
- 
+
         <!-- Sidmenyn för Leverantör -->
       @elseif(Auth::user()->role == 2)
     <li><a href="newbooking"><i class="material-icons">note_add</i>Boka Leverans</a></li>
@@ -108,12 +108,14 @@
         <!-- Content end -->
 
 
+
+
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 <!-- Datetimepicker -->
 <script type="text/javascript" src="./jquery.js"></script>
 <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
-
-<!-- Jquery -->  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 <!-- Jquery validation -->
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
@@ -142,7 +144,7 @@ console.log(supplierFavorite);
 var logic = function(){
     if(supplierFavorite == 24){
         this.setOptions({
-          minDate:'+1970/01/02' 
+          minDate:'+1970/01/02'
         });
     }
 };

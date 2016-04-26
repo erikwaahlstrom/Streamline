@@ -12,6 +12,7 @@ use App\Order;
 use App\Article;
 use App\OrderArticle;
 use App\BookingOrder;
+use Mail;
 
 class BookingController extends Controller
 {
@@ -114,7 +115,21 @@ class BookingController extends Controller
             $createdOrder['total_weight'] = $totalWeight;
             $createdOrder->save();
         }
-    }
+
+        //Skicka bokningsbekräftelse via email
+        $mailContent = 'Du har bokat en leveranstid den ' . $createdBooking['date'] . '. ' . 'Ditt referensnummer är ' . $createdBooking['reference_number'];
+
+        Mail::raw($mailContent, function ($message) {
+            $user = Auth::user();
+            $emailTo = $user['email'];
+
+            $message->from('helensbokningssystem@gmail.com');
+            $message->to($emailTo);
+            $message->subject('Bokningsbekräftelse från Heléns rör bokningssytem');
+        });
+
+        return redirect('/newbooking')->with('status', 'Din leveranstid har bokats! En bokningsbekräftelse har skickats till din email.');
+}
 
     public function delete(Request $request)
     {
