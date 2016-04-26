@@ -32,22 +32,22 @@ class EditController extends Controller
 	    return view('edit', compact('suppliers', 'user'));
 
 	    }
-	    	//Radera användare
-	        public function delete(Request $request)
+	//Radera användare
+	public function delete(Request $request)
     {
         $data = $request->all();
         Supplier::destroy($data['id']);
 
         return redirect('/edit');
     }
-    	//Uppdatera användare
-        public function update(Request $request)
+    //Uppdatera användare
+    public function update(Request $request)
     {
         $data = $request->all();
 
-        $suppliers = Supplier::all();
+        $suppliers = Supplier::findOrFail($data['id']);
         $suppliers->favorite = $data['favorite'];
-        // $suppliers->save();
+        $suppliers->save();
 
         return redirect('/edit');
     }
@@ -69,7 +69,7 @@ class EditController extends Controller
             $supplier['email'] = $supplierUser[0]->email;
             // return $supplier;
         }
-        
+
         // return view('edit', compact('suppliers', 'user'));
         if (count($suppliers) < 1) {
             return redirect('/edit')->with('error', 'Tyvärr hittates inga leverantörer med detta namnet. Nedan visas istället alla leverantörer.');

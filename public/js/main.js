@@ -63,9 +63,84 @@ $(document).ready(function(){
 
 
     /*Validation*/
-    
-    
 
+    $("#create").validate({
+            rules: {
+            email: {
+                required: true,
+                email: true
+            },
+            uname: {
+                required: true,
+                minlength: 5
+            },
+         },
+         messages: {
+            email: {
+                required: 'Ange en email adress',
+                email: 'Ange en giltig email adress (ex: mail@mail.com)'
+            },
+            uname:{
+                required: "Fyll i Leverantör",
+                minlength: "Fyll i minst 5 karaktärer"
+            },
+         }
+    });
 
+    $("#createUser").validate({
+            rules: {
+            email: {
+                required: true,
+                email: true
+            }, 
+            password: {
+                required: true,
+                minlength: 5
+            },
+            cpassword: {
+                required: true,
+                minlength: 5,
+                equalTo: "#password"
+            },
+         },  
+         messages: {
+            email: {
+                required: 'Ange en email adress',
+                email: 'Ange en giltig email adress (ex: mail@mail.com)'
+            },
+            password: {
+                required: "Detta fältet är obligatoriskt",
+                minlength: "Fyll i minst 5 karaktärer"
+            },
+            cpassword: {
+                required: "Upprepa lösenord",
+                minlength: "Fyll i minst 5 karaktärer",
+                equalTo: ""
+            },
+         }
+    });
+
+    $("#login").validate({
+            rules: {
+            email: {
+                required: true,
+                email: true
+            }, 
+            password: {
+                required: true,
+                minlength: 5
+            },
+         },  
+         messages: {
+            email: {
+                required: 'Vänligen ange en email adress',
+                email: 'Vänligen ange en giltig email adress (ex: mail@mail.com)'
+            },
+            password: {
+                required: "Detta fältet är obligatoriskt",
+                minlength: "Fyll i minst 5 karaktärer"
+            },
+         }
+    });
 
 });

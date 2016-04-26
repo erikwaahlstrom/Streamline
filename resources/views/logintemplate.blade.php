@@ -9,12 +9,22 @@
     </head>
     <body> 
      
-        <div class="container">  
+        <div class="content">  
             @yield('content') 
         </div>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        <!-- Jquery -->  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Jquery validation -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+
+<!-- Materialize javascript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    
+<!-- Main javascript -->
+<script type="text/javascript" src="js/main.js"></script>
+
     </body>
 </html>
  

@@ -10,58 +10,32 @@ body {
     display: table;
     font-family: 'Varela Round', sans-serif;
 }
- 
-.container {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle; 
-}
 
 .content {
     text-align: center;
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .title {
     font-size: 96px;
 }
 
-/*** Loginform start ***/
-
-.container .row {
-    margin-left: 0;
-    margin-right: 0;
+/*Loginformulär*/
+#login {
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
 }
+
+/*** Loginform start ***/
 
 /* Logotop */
 #helens-logga {
     margin-bottom: 3em;
 }
 
-/* Input */
-.input-field {
-    width: 30%;
-    margin: 0 auto;
-}
 
-/* Input användarnamn/email */
-input#email.validate {
-    border-bottom: 1px solid white;
-    box-shadow: none;
-}
-
-/* Input password */
-input#password.validate {
-    border-bottom: 1px solid white;
-    box-shadow: none;
-}
-
-
-/* Input password */
-input#reapeatpassword.validate {
-    border-bottom: 1px solid white;
-    box-shadow: none;
-}
 
 /* Loginknapp */
 #loginknapp {
@@ -73,8 +47,8 @@ input#reapeatpassword.validate {
 
 /* Wave-effect loginknapp */
 .waves-effect.default .waves-ripple {
-      background-color: #5A9AD0;
-    }
+    background-color: #5A9AD0;
+}
 
 /* Språkknapp */
 #languageicon {
@@ -82,6 +56,22 @@ input#reapeatpassword.validate {
     position: absolute;
     left: 30px;
     bottom: 30px;
+}
+
+/*Färg på inputfält-bottom-border*/
+.validate {
+    border-bottom: 1px solid #b3b3b3 !important;
+    box-shadow: none !important;
+}
+
+/*Färg på inputfält-text*/
+.active {
+    color: #b3b3b3 !important;
+}
+
+/*Färg på validation meddelande*/
+label.error {
+    color: #FFFFFF !important;
 }
 
 /*** Loginform end ***/

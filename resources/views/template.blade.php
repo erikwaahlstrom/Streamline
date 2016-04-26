@@ -34,7 +34,7 @@
     <li><a href="create"><i class="material-icons">perm_identity</i>Lägg till leverantör</a></li>
     <li><a href="edit"><i class="material-icons">mode_edit</i>Redigera Leverantörer</a></li>
     <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>
-
+ 
         <!-- Sidmenyn för Leverantör -->
       @elseif(Auth::user()->role == 2)
     <li><a href="newbooking"><i class="material-icons">note_add</i>Boka Leverans</a></li>
@@ -62,8 +62,9 @@
     </div>
 
       </ul>
-        <!-- Dropdown Trigger -->
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1' style="width: 150px; text-align: center; margin-top: 0px;">Meny</a>
+         <!-- Dropdown Trigger -->
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">Meny</a>
+
 
         <!-- Dropdown Structure -->
       <ul id='dropdown1' class='dropdown-content'>
@@ -107,27 +108,41 @@
         <!-- Content end -->
 
 
-<!-- Jquery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  
-<!-- Jquery validation -->
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-
 <!-- Datetimepicker -->
 <script type="text/javascript" src="./jquery.js"></script>
 <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
 
+<!-- Jquery -->  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Jquery validation -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+
 <!-- Materialize javascript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<!-- Materialize Dropdown -->
+<script>
+$('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: false, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+</script>
 
 <!-- Jquery datetimepicker -->
 <script type="text/javascript">
 var supplierFavorite = $('#datetimepicker').data("favorite");
-// console.log(supplierFavorite);
+console.log(supplierFavorite);
 var logic = function(){
     if(supplierFavorite == 24){
         this.setOptions({
-          minDate:'+1970/01/02'
+          minDate:'+1970/01/02' 
         });
     }
 };

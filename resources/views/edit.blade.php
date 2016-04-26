@@ -70,6 +70,8 @@
             <p>Bokningsalternativ:</p>
          <form method="POST" action="{{ url('/editsupplier') }}">
               {!! csrf_field() !!}
+         <input type="hidden" name="id" value="{{ $supplier->id }}"></input>
+         <input type="hidden" name="favorite" value="{{ $supplier->favorite }}"></input>
          <select class="browser-default" name="favorite" onchange="this.form.submit()">
 
           @if($supplier->favorite == 24)
@@ -87,13 +89,13 @@
         @endif
 
         </select>
-
+        </form>
           </div>
           <div class="card-action">
 
             <form method="POST" action="{{ url('/deletesupplier') }}">
                     {!! csrf_field() !!}
-                     <input type="hidden" name="id" value="{{ $suppliers }}"></input>
+                     <input type="hidden" name="id" value="{{ $supplier->id }}"></input>
                 <button class="btn waves-effect default #000000 deletebtn" type="submit">Radera</button>
             </form>
 

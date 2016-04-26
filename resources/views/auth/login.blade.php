@@ -1,27 +1,24 @@
 @extends('logintemplate')
 
 @section('content')
+
 <img src="{{url('img/helens-logga.png')}}" id="helens-logga">
 
-<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-  {!! csrf_field() !!}
-  <div class="row">
-    <div class="input-field white-text text-darken-2">
-      <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}">
-      <label for="email" class="white-text text-darken-2">Email</label>
-    </div>
-   </div>
+<form id="login" class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+  {!! csrf_field() !!} 
 
-  <div class="row">
-    <div class="input-field white-text text-darken-2">
-      <input id="password" type="password" class="validate" name="password">
-      <label for="password" class="white-text text-darken-2">Lösenord</label>
+    <div class="white-text text-darken-2">
+      <input type="email" class="validate" name="email" value="{{ old('email') }}">
     </div>
-  </div>
+
+    <div class="white-text text-darken-2">
+      <input type="password" class="validate" name="password">
+    </div>
 
   <button class="btn waves-effect default #ffffff white" type="submit" name="action" id="loginknapp">Logga in
     <i class="material-icons right">send</i>
   </button>
+
 </form>
 
 <a href="#"><i class="material-icons small" id="languageicon">language</i></a>
