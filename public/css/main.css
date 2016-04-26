@@ -221,6 +221,7 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     width: 30%;
     display: block;
     margin: 2em auto 0 auto;
+    text-align: left;
 }
 
 /*Formulär för leverantörer*/
@@ -263,6 +264,11 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 /*Färg på inputfält-text*/
 .active {
     color: #b3b3b3 !important;
+}
+
+/*Färg på validation meddelande*/
+label.error {
+    color: red !important;
 }
 
 /*CSS för bokningsfomrulär*/

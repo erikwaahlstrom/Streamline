@@ -10,18 +10,46 @@
         {{ session('status') }}
     </div>
     @endif
+ 
+    <!--CREATE-->
+    <form id="create" class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
+    {!! csrf_field() !!}
 
-    <form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
+      <div>
+        <input name="uname" placeholder="Lägg till leverantör" type="text" class="validate">
+      </div>
+
+      <div>
+        <input name="email"  placeholder="Email" type="text" class="validate">
+      </div>
+
+        <div class="input-field">
+          <select class="browser-default" browser-default name="favorite">
+              <option value=""disabled selected>Bokningsmöjlighet</option>
+              <option value="24">24 h</option>
+              <option value="48">48 h</option>
+          </select>
+        </div>
+
+        <br>
+        <button class="btn waves-effect default #000000" id="addsupplier" type="submit">Bekräfta
+        <i class="material-icons right">send</i>
+        </button>
+
+    </form>
+
+
+
+    <!-- <form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
 
 
         <div class="input-field">
             <input type="text" name="name" class="validate">
-            <!-- data-error="wrong" data-success="right" -->
-            <label for="name" class="active">Leverantör</label>
+            <label for="name" data-error="wrong" data-success="right" class="active">Leverantör</label>
         </div>
 
-        <div class="input-field">
+        <div class="input-field"> 
             <input id="email" type="email" class="validate" name="email">
             <label for="email" data-error="wrong" data-success="right" class="active">Email</label>
         </div>
@@ -39,7 +67,7 @@
         <i class="material-icons right">send</i>
         </button>
 
-</form>
+</form> -->
 
 
 
