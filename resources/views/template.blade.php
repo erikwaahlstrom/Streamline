@@ -38,7 +38,7 @@
         <!-- Sidmenyn för Leverantör -->
       @elseif(Auth::user()->role == 2)
     <li><a href="newbooking"><i class="material-icons">note_add</i>Boka Leverans</a></li>
-    <li><a href="#!"><i class="material-icons">description</i>Mina Bokningar</a></li>
+    <li><a href="deliveries"><i class="material-icons">description</i>Mina Bokningar</a></li>
 
         <!-- Sidmenyn för Lagerpersonal -->
       @elseif(Auth::user()->role == 3)
@@ -151,10 +151,11 @@ var logic = function(){
 
   jQuery('#datetimepicker').datetimepicker({
       allowTimes:[
-          '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00'
+          '07:30', '08:00', '08:30', '09:30', '10:00', '10:30', '11:00', '11:30', '12:30', '13:00', '13:30', '14:30', '15:00', '15:30'
         ],
+        disabledWeekDays: [0, 6],
       minDate: '+1970/01/03',
-      maxDate: '+1970/01/30',
+      maxDate: '+1970/01/3',
       onChangeDateTime:logic,
       onShow:logic
   });
