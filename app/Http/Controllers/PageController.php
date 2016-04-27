@@ -33,11 +33,7 @@ class PageController extends Controller
 
     public function showConfirmedView()
     {
-        if (!Auth::check()) {
-            return redirect('/');
-        }
 
-        $user = Auth::user();
         return view('confirmed', compact('user'));
     }
 

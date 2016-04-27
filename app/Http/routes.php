@@ -69,4 +69,6 @@ Route::group(['middleware' => 'web'], function () {
         Route::post('/editsupplier', 'EditController@update');
         Route::post('/searchsupplier', 'EditController@search');
 
+        Route::post('/registerreference', 'TransportController@index');
+
 });

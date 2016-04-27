@@ -2,7 +2,11 @@
 
 @section('content')
 <!-- <div class="content"> -->
-    <div class="title">Ankommande leveranser</div>
+    @if(Auth::user()->role == 2)
+        <div class="title">Mina bokningar</div>
+    @else
+        <div class="title">Ankommande leveranser</div>
+    @endif
 
     <table class="striped">
         <thead>
