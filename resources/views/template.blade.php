@@ -31,6 +31,7 @@
         <!-- Sidmenyn för Speditör -->
       @if(Auth::user()->role == 1)
     <li><a href="createUser"><i class="material-icons">supervisor_account</i>Lägg till personal</a></li>
+    <li><a href="editUser"><i class="material-icons">mode_edit</i>Redigera personal</a></li>
     <li><a href="create"><i class="material-icons">perm_identity</i>Lägg till leverantör</a></li>
     <li><a href="edit"><i class="material-icons">mode_edit</i>Redigera Leverantörer</a></li>
     <li><a href="deliveries"><i class="material-icons">import_export</i>Ankommande Leveranser</a></li>

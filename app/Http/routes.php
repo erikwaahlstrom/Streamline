@@ -55,7 +55,9 @@ Route::group(['middleware' => 'web'], function () {
         Route::post('/newbooking', 'BookingController@store');
         Route::get('/newbooking', 'PageController@showArrivaldateView');
 
-
+        Route::get('/editUser', 'EdituserController@index');
+        Route::post('/editUser', 'EdituserController@update');
+        Route::post('/deleteUser', 'EdituserController@delete');
 
         Route::get('/deliveries', 'BookingController@index');
 

@@ -94,4 +94,15 @@ class PageController extends Controller
         return view('createUser', compact('user'));
     }
 
+        public function showEditUserView()
+    {
+        
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+
+        $user = Auth::user();
+        return view('editUser', compact('user'));
+    }
+
 }
