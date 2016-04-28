@@ -73,4 +73,6 @@ Route::group(['middleware' => 'web'], function () {
 
         Route::post('/registerreference', 'TransportController@index');
 
+        Route::get('newpassword', 'UserController@showNewPassword');
+        Route::post('newpassword', 'UserController@newPassword');
 });

@@ -4,32 +4,20 @@
 
 <img src="{{url('img/helens-logga.png')}}" id="helens-logga">
 
-
-
-<form id="login" class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-    @if (session('status'))
-    <div class="card-panel #66bb6a white lighten-1">
-        {{ session('status') }}
-    </div>
-    @endif
+<form id="login" class="form-horizontal" role="form" method="POST" action="{{ url('/newpassword') }}">
   {!! csrf_field() !!}
 
     <div class="white-text text-darken-2">
       <input type="email" class="validate" name="email" value="{{ old('email') }}">
     </div>
 
-    <div class="white-text text-darken-2">
-      <input type="password" class="validate" name="password">
-    </div>
-
-  <button class="btn waves-effect default #ffffff white" type="submit" name="action" id="loginknapp">Logga in
+  <button class="btn waves-effect default #ffffff white" type="submit" name="action" id="loginknapp">Skicka
     <i class="material-icons right">send</i>
   </button>
 
 
 
 </form>
-<a class="passwordlink" href="/newpassword">Glömt ditt lösenord? Klicka här</a>
 
 <a href="#"><i class="material-icons small" id="languageicon">language</i></a>
 

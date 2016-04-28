@@ -26,6 +26,7 @@ body {
     width: 30%;
     margin: 0 auto;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 /*** Loginform start ***/
@@ -78,6 +79,11 @@ input#referencenumber.validate {
 /*Färg på validation meddelande*/
 label.error {
     color: #FFFFFF !important;
+}
+
+
+.passwordlink {
+    color: #ffffff;
 }
 
 /*** Loginform end ***/

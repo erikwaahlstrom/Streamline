@@ -61,7 +61,7 @@ body {
 }
 
 a.dropdown-button.btn {
-    text-align: left; 
+    text-align: left;
     margin-top: 0px;
     height:40px;
     box-shadow: 0px 0px 0px 0px;
@@ -90,7 +90,7 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     font-weight: 900;
     color: #fff;
     background-color: #423F3F;
-    
+
 }
 
 .dropdown-content li {
