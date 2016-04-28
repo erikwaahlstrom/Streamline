@@ -54,8 +54,14 @@ body {
 
 /*Dropdown meny*/
 
+.dropdown-content
+{
+  background-color: transparent;
+  overflow-y: visible;
+}
+
 a.dropdown-button.btn {
-    text-align: center; 
+    text-align: left; 
     margin-top: 0px;
     height:40px;
     box-shadow: 0px 0px 0px 0px;
@@ -75,6 +81,9 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 .dropdown-content li > a, .dropdown-content li > span
 {
   color: #fff;
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .dropdown-content a:hover, a:active {
@@ -85,8 +94,9 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 }
 
 .dropdown-content li {
-  text-align: center;
+  text-align: left;
   background-color:#131010;
+  width: 240px;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected

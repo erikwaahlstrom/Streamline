@@ -64,7 +64,7 @@
 
       </ul>
          <!-- Dropdown Trigger -->
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">Meny</a>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">Meny <i class="material-icons" style="float:right;">toc</i></a>
 
 
         <!-- Dropdown Structure -->
@@ -72,31 +72,35 @@
 
         <!-- Dropdown för Speditör -->
         @if(Auth::user()->role == 1)
-    <li><a href="createUser"><i class="material-icons">supervisor_account</i><br>Lägg till personal</a></li>
-    <li><a href="create"><i class="material-icons">perm_identity</i><br>Lägg till leverantör</a></li>
-    <li><a href="edit"><i class="material-icons">mode_edit</i><br>Redigera Leverantörer</a></li>
-    <li><a href="deliveries"><i class="material-icons">import_export</i><br>Ankommande Leveranser</a></li>
+    <li><a href="createUser"><br> Lägg till personal <i class="tiny material-icons" style="float:right;">supervisor_account</i> </a> </li>
+    <li><a href="create"><br>Lägg till leverantör <i class="tiny material-icons" style="float:right;">perm_identity</i> </a> </li>
+    <li><a href="edit"><br>Redigera Leverantörer <i class="tiny material-icons" style="float:right;">mode_edit</i> </a> </li>
+    <li><a href="deliveries"><br>Ankommande Leveranser <i class="tiny material-icons" style="float:right;">import_export</i> </a> </li>
 
         <!-- Dropdown för Leverantör -->
       @elseif(Auth::user()->role == 2)
-    <li><a href="newbooking"><i class="material-icons">note_add</i><br>Boka Leverans</a></li>
-    <li><a href="#!"><i class="material-icons">description</i><br>Mina Bokningar</a></li>
+    <li><a href="newbooking"><br>Boka Leverans <i class="tiny material-icons" style="float:right;">note_add</i> </a> </li>
+    <li><a href="#!"><br>Mina Bokningar<i class="tiny material-icons" style="float:right;">description</i> </a> </li>
 
         <!-- Dropdown för Lagerpersonal -->
       @elseif(Auth::user()->role == 3)
-    <li><a href="deliveries"><i class="material-icons">import_export</i><br>Ankommande Leveranser</a></li>
+    <li><a href="deliveries"><br>Ankommande Leveranser <i class="tiny material-icons" style="float:right;">import_export</i> </a> </li>
 
 
       @endif
+       <li>
+       <!-- Space -->
+       </li>
+
       <li class="divider"></li>
-       <li style="color:#fff;">Inloggad som <br>{{ $user->email }}</li>
+       <li style="color:#fff; padding-left: 16px; font-size: 12px;">Inloggad som <br>{{ $user->email }}</li>
 
       <li>
-        <a href="{{url('/logout')}}"><i class="material-icons">input</i> Logga Ut</a>
+        <a href="{{url('/logout')}}"> Logga Ut <i class="tiny material-icons" style="float:right;">input</i></a>
       </li>
 
         <li>
-          <a href="#"><i class="material-icons">language</i>Språk</a>
+          <a href="#">Språk<i class="tiny material-icons" style="float:right;">language</i> </a>
         </li>
       </ul>
 
