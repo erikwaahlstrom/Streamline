@@ -53,10 +53,8 @@ body {
 }
 
 /*Dropdown meny*/
-
 .dropdown-content {
     background-color: transparent;
-    overflow: visible;
 }
 
 a.dropdown-button.btn {
@@ -69,7 +67,6 @@ a.dropdown-button.btn {
 a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     border-left: none;
 }
-
 
 @media only screen and (max-width : 1000px) {
       a.dropdown-button.btn {
@@ -174,9 +171,8 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 
 @media only screen and (max-width : 1000px) {
       .content {
-        width: 100%;
         padding: 0px;
-
+        width: 100%;
 }
 }
 /*Innehåll*/
@@ -307,13 +303,14 @@ label.error {
 }
 
 .addarticle {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 15px 0px;
     width: 100%;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 }
 
 .addorder {
+    margin: 0px 0px 15px 0px;
     width: 100%;
 }
 
@@ -327,8 +324,7 @@ label.error {
 
 .bookingbtn {
     width: 100%;  
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 0px 0px 15px 0px;
 }
 
 .file-field {
@@ -371,7 +367,7 @@ label.error {
     width: 100%;
     background-color: #f7193a;
     height: 50px;
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 15px 0px;
 }
 
 .deletebtn:hover {

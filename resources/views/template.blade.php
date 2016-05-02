@@ -82,8 +82,8 @@
 
         <!-- Dropdown för Leverantör -->
       @elseif(Auth::user()->role == 2)
-    <li><a href="newbooking"><br>Boka leverans <i class="tiny material-icons" style="float:right;">note_add</i> </a> </li>
-    <li><a href="#!"><br>Mina bokningar<i class="tiny material-icons" style="float:right;">description</i> </a> </li>
+    <li><a href="newbooking"><br>Boka leverans <i class="material-icons">note_add</i> </a> </li>
+    <li><a href="#!"><br>Mina bokningar<i class="material-icons">description</i> </a> </li>
 
         <!-- Dropdown för Lagerpersonal -->
       @elseif(Auth::user()->role == 3)
@@ -91,19 +91,15 @@
     <li><a href="deliveries"><i class="material-icons">import_export</i><br>Ankommande leveranser</a></li>
 
       @endif
-       <li>
-       <!-- Space -->
-       </li>
-
-      <li class="divider"></li>
-       <li style="color:#fff; padding-left: 16px; font-size: 12px;">Inloggad som <br>{{ $user->email }}</li>
+    
+       <li id="loggedinas">Inloggad som <br>{{ $user->email }}</li>
 
       <li>
-        <a href="{{url('/logout')}}"> Logga ut <i class="tiny material-icons" style="float:right;">input</i></a>
+        <a href="{{url('/logout')}}"><i class="material-icons">input</i>Logga ut</a>
       </li>
 
         <li>
-          <a href="#">Språk<i class="tiny material-icons" style="float:right;">language</i> </a>
+          <a href="#"><i class="material-icons">language</i>Språk</a>
         </li>
       </ul>
 
