@@ -43,6 +43,10 @@ class PageController extends Controller
             return redirect('/');
         }
 
+        if (Auth::user()->role != 1) {
+            return redirect()->back();
+        }
+
         $user = Auth::user();
         return view('create', compact('user'));
     }
@@ -51,6 +55,10 @@ class PageController extends Controller
     {
         if (!Auth::check()) {
             return redirect('/');
+        }
+
+        if (Auth::user()->role != 2) {
+            return redirect()->back();
         }
 
         $user = Auth::user();
@@ -65,6 +73,7 @@ class PageController extends Controller
             return redirect('/');
         }
 
+
         $user = Auth::user();
         return view('deliveries', compact('user'));
     }
@@ -73,6 +82,10 @@ class PageController extends Controller
     {
         if (!Auth::check()) {
             return redirect('/');
+        }
+
+        if (Auth::user()->role != 1) {
+            return redirect()->back();
         }
 
         $user = Auth::user();
@@ -90,15 +103,23 @@ class PageController extends Controller
             return redirect('/');
         }
 
+        if (Auth::user()->role != 1) {
+            return redirect()->back();
+        }
+
         $user = Auth::user();
         return view('createUser', compact('user'));
     }
 
         public function showEditUserView()
     {
-        
+
         if (!Auth::check()) {
             return redirect('/');
+        }
+
+        if (Auth::user()->role != 1) {
+            return redirect()->back();
         }
 
         $user = Auth::user();

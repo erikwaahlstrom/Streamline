@@ -70,10 +70,10 @@
         <!-- Dropdown Structure -->
       <ul id='dropdown1' class='dropdown-content'>
 
-        <!-- Dropdown för Speditör -->  
+        <!-- Dropdown för Speditör -->
         @if(Auth::user()->role == 1)
     <li><a href="createUser"><br> Lägg till personal <i class="tiny material-icons" style="float:right;">supervisor_account</i> </a> </li>
-    <li><a href="editUser"><br> Redigera personal <i class="tiny material-icons" style="float:right;">mode_edit</i> </a> </li>    
+    <li><a href="editUser"><br> Redigera personal <i class="tiny material-icons" style="float:right;">mode_edit</i> </a> </li>
     <li><a href="create"><br>Lägg till leverantör <i class="tiny material-icons" style="float:right;">perm_identity</i> </a> </li>
     <li><a href="edit"><br>Redigera Leverantörer <i class="tiny material-icons" style="float:right;">mode_edit</i> </a> </li>
     <li><a href="deliveries"><br>Ankommande Leveranser <i class="tiny material-icons" style="float:right;">import_export</i> </a> </li>
@@ -161,7 +161,7 @@ var logic = function(){
         ],
         disabledWeekDays: [0, 6],
       minDate: '+1970/01/03',
-      maxDate: '+1970/01/3',
+      maxDate: '+1970/01/4',
       onChangeDateTime:logic,
       onShow:logic
   });
