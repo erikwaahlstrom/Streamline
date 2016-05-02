@@ -54,6 +54,11 @@ body {
 
 /*Dropdown meny*/
 
+.dropdown-content {
+    background-color: transparent;
+    overflow: visible;
+}
+
 a.dropdown-button.btn {
     text-align: center; 
     margin-top: 0px;
@@ -81,7 +86,6 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     font-weight: 900;
     color: #fff;
     background-color: #423F3F;
-    
 }
 
 .dropdown-content li {
