@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     background-color: #005B92;
-}
+} 
 
 body {
     margin: 0;
@@ -25,8 +25,11 @@ body {
 #login {
     width: 30%;
     margin: 0 auto;
-    text-align: left;
-    margin-bottom: 20px;
+}
+
+#transportinput {
+    width: 30%;
+    margin: 0 auto;
 }
 
 /*** Loginform start ***/
@@ -36,20 +39,12 @@ body {
     margin-bottom: 3em;
 }
 
-
-
-/* Input referensnummer */
-input#referencenumber.validate {
-    border-bottom: 1px solid white;
-    box-shadow: none;
-}
-
 /* Loginknapp */
 #loginknapp {
     color: #5A9AD0;
     font-weight: 700;
-    width: 200px;
     height: 50px;
+    margin-top: 20px;
 }
 
 /* Wave-effect loginknapp */
@@ -67,13 +62,13 @@ input#referencenumber.validate {
 
 /*Färg på inputfält-bottom-border*/
 .validate {
-    border-bottom: 1px solid #b3b3b3 !important;
+    border-bottom: 1px solid #FFFFFF !important;
     box-shadow: none !important;
 }
 
 /*Färg på inputfält-text*/
 .active {
-    color: #b3b3b3 !important;
+    color: #FFFFFF !important;
 }
 
 /*Färg på validation meddelande*/
@@ -86,4 +81,7 @@ label.error {
     color: #ffffff;
 }
 
+::-webkit-input-placeholder {
+   color: #FFFFFF !important;
+}
 /*** Loginform end ***/

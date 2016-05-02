@@ -1,9 +1,8 @@
 @extends('template')
-
 @section('content')
 
 
-    <div class="title">Lägg till personal</div>
+  <div class="title">Lägg till personal</div>
 
     <!-- Feedback-message -->
     @if (session('status'))
@@ -12,7 +11,7 @@
       </div>
     @endif
 
-
+ 
     <form id="createUser" class="inputform" role="form" method="POST" action="{{ url('/newuser') }}">
     {!! csrf_field() !!}
 
@@ -30,9 +29,9 @@
 
               <div class="input-field">
                 <select class="browser-default" name="role">
-              <option value="" disabled selected>Användartyp</option>
-              <option value="1">Speditör (Alla behörigheter)</option>
-              <option value="3">Lagerpersonal (Tillgång till granskning)</option>
+                  <option value="" disabled selected>Användartyp</option>
+                  <option value="1">Speditör (Alla behörigheter)</option>
+                  <option value="3">Lagerpersonal (Tillgång till granskning)</option>
                 </select>
               </div>
 
@@ -42,7 +41,7 @@
 
     </form>
 
-   <!--  <form class="inputform" role="form" method="POST" action="{{ url('/newuser') }}">
+  <!--  <form class="inputform" role="form" method="POST" action="{{ url('/newuser') }}">
   {!! csrf_field() !!}
 
             <div class="input-field">
