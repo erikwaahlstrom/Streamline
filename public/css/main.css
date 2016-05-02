@@ -54,14 +54,8 @@ body {
 
 /*Dropdown meny*/
 
-.dropdown-content
-{
-  background-color: transparent;
-  overflow-y: visible;
-}
-
 a.dropdown-button.btn {
-    text-align: left;
+    text-align: center; 
     margin-top: 0px;
     height:40px;
     box-shadow: 0px 0px 0px 0px;
@@ -81,22 +75,18 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 .dropdown-content li > a, .dropdown-content li > span
 {
   color: #fff;
-  font-size: 12px;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .dropdown-content a:hover, a:active {
     font-weight: 900;
     color: #fff;
     background-color: #423F3F;
-
+    
 }
 
 .dropdown-content li {
-  text-align: left;
+  text-align: center;
   background-color:#131010;
-  width: 240px;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected
@@ -109,6 +99,10 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     color: #E9E1E1;
     font-weight: 900;
     width: 100%;
+}
+
+#loggedinas{
+    color: #fff;
 }
 
 /*Sidomeny heading/länkar*/
@@ -178,8 +172,8 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
       .content {
         width: 100%;
         padding: 0px;
-}
 
+}
 }
 /*Innehåll*/
 
@@ -309,7 +303,7 @@ label.error {
 }
 
 .addarticle {
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 30px 0px;
     width: 100%;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -317,20 +311,20 @@ label.error {
 
 .addorder {
     width: 100%;
-    margin: 0px 0px 15px 0px;
 }
 
 .hide {
     display: none;
 }
- 
+
 .show {
     display: block;
 }
 
 .bookingbtn {
-    width: 100%;
-    margin: 0px 0px 15px 0px;
+    width: 100%;  
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .file-field {
@@ -373,7 +367,7 @@ label.error {
     width: 100%;
     background-color: #f7193a;
     height: 50px;
-    margin: 0px 0px 30px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 .deletebtn:hover {
