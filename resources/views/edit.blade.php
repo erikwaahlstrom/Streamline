@@ -1,8 +1,28 @@
 @extends('template')
 @section('content')
-    <div class="title">Redigera Leverantörer</div>
+<div class="title">Redigera Leverantörer</div>
 
-    <div class="container">
+  <div class="container">
+        <div class="row">
+
+          <form method="POST" action="{{ url('/searchsupplier') }}">
+          {!! csrf_field() !!}
+
+              <div class="col s10">
+
+                <input id="searchinput" name="search" placeholder="Sök leverantör..." type="text" class="validate">
+
+              </div>
+
+              <div class="col s2">
+              <button class="btn waves-effect default #000000 searchbtn" type="submit">Sök</button>
+              </div>
+
+          </form>
+      </div>
+  </div>
+
+    <!-- <div class="container">
         <form method="POST" action="{{ url('/searchsupplier') }}">
             {!! csrf_field() !!}
             <div class="input-field">
@@ -11,7 +31,7 @@
             </div>
             <button class="btn waves-effect default #000000 searchbtn" type="submit">Sök</button>
         </form>
-    </div>
+    </div> -->
 
     @if (session('error'))
     <div class="card-panel #66bb6a red lighten-1">
@@ -21,6 +41,8 @@
 
     @if (session('suppliers'))
         @foreach(session('suppliers') as $supplier)
+
+ <div class="container">
 
             <div class="card">
             <div class="card-content black-text">
@@ -105,5 +127,5 @@
 
     @endforeach
     @endif
-
+</div>
 @stop

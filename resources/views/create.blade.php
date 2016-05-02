@@ -1,8 +1,7 @@
 @extends('template')
 
 @section('content')
-
-
+ 
     <div class="title">Lägg till leverantör</div><br>
 
     @if (session('status'))
@@ -18,7 +17,7 @@
       <div>
         <input name="name" placeholder="Lägg till leverantör" type="text" class="validate">
       </div>
-
+ 
       <div>
         <input name="email"  placeholder="Email" type="text" class="validate">
       </div>
@@ -37,8 +36,6 @@
         </button>
 
     </form>
-
-
 
     <!-- <form class="inputform" role="form" method="POST" action="{{ url('/newsupplier') }}">
     {!! csrf_field() !!}
@@ -68,9 +65,6 @@
         </button>
 
 </form> -->
-
-
-
 
   {{--   <!-- Gentis gamla - Input Fields -->
   <form class="input-form" role="form" method="POST" action="{{ url('/newsupplier') }}">
@@ -108,8 +102,6 @@
 </button>
     </form>
 
-
 </div> --}}
-
 
 @stop

@@ -53,15 +53,12 @@ body {
 }
 
 /*Dropdown meny*/
-
-.dropdown-content
-{
-  background-color: transparent;
-  overflow-y: visible;
+.dropdown-content {
+    background-color: transparent;
 }
 
 a.dropdown-button.btn {
-    text-align: left;
+    text-align: center;
     margin-top: 0px;
     height:40px;
     box-shadow: 0px 0px 0px 0px;
@@ -70,7 +67,6 @@ a.dropdown-button.btn {
 a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     border-left: none;
 }
-
 
 @media only screen and (max-width : 1000px) {
       a.dropdown-button.btn {
@@ -81,22 +77,17 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 .dropdown-content li > a, .dropdown-content li > span
 {
   color: #fff;
-  font-size: 12px;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .dropdown-content a:hover, a:active {
     font-weight: 900;
     color: #fff;
     background-color: #423F3F;
-
 }
 
 .dropdown-content li {
-  text-align: left;
+  text-align: center;
   background-color:#131010;
-  width: 240px;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected
@@ -109,6 +100,10 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
     color: #E9E1E1;
     font-weight: 900;
     width: 100%;
+}
+
+#loggedinas{
+    color: #fff;
 }
 
 /*Sidomeny heading/länkar*/
@@ -153,9 +148,12 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 
 /*Materialize ikoner*/
 .material-icons {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin:0px;
     vertical-align: middle;
+}
+
+.material-icons.sidebaricons {
+    margin: 0px 20px 0px 20px;
 }
 
 /*** INNEHÅLL***/
@@ -173,8 +171,8 @@ a.dropdown-button.btn:hover, .dropdown-button.btn:active {
 
 @media only screen and (max-width : 1000px) {
       .content {
-        padding-left: 50px;
-
+        padding: 0px;
+        width: 100%;
 }
 }
 /*Innehåll*/
@@ -287,20 +285,33 @@ label.error {
     display: none;
 }
 
-.order {
-    margin-top: 50px;
-}
-
+/*Orderbox*/
 .orderbox {
+    margin-top: 100px;
     background-color: #f5f5f5;
     border-radius: 4px;
     padding: 20px;
     min-height: 20px;
-    margin-bottom: 100px;
+}
+
+/*Articlebox*/
+.articlebox {
+    border-top: 2px solid #005B92;
+    background-color: #f5f5f5;
+    padding: 20px;
+    min-height: 20px;
+}
+
+.addarticle {
+    margin: 0px 0px 15px 0px;
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
 }
 
 .addorder {
-    margin-top: 100px;
+    margin: 0px 0px 15px 0px;
+    width: 100%;
 }
 
 .hide {
@@ -312,7 +323,8 @@ label.error {
 }
 
 .bookingbtn {
-    margin-top: 100px;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
 }
 
 .file-field {
@@ -330,6 +342,7 @@ label.error {
     margin: 1em;
     border-top: 5px solid #005B92;
     padding-bottom: 20px;
+    float: left;
 }
 
 .card a {
@@ -341,7 +354,6 @@ label.error {
     color: #fff;
     width: 40%;
     margin: 0px auto;
-
 }
 
 .card a:hover {
@@ -352,9 +364,14 @@ label.error {
 /*Style för deliveries vyn*/
 
 .deletebtn {
+    width: 100%;
     background-color: #f7193a;
-    height: 40px;
-    margin: 0;
+    height: 50px;
+    margin: 0px 0px 15px 0px;
+}
+
+.cancelbooking {
+    padding-top: 7px;
 }
 
 .deletebtn:hover {

@@ -2,34 +2,76 @@
 
 @section('content')
 
-<!-- <input type="date" class="datepicker"> -->
 <div class="title">Boka Leverans</div>
+
 @if (session('status'))
 <div class="card-panel #66bb6a green lighten-1">
     {{ session('status') }}
 </div>
 @endif
-<form id="bookingform" class="inputform" role="form" method="POST" enctype="multipart/form-data" action="{{ url('/newbooking') }}">
+
+<form id="newbookingform" class="inputform" role="form" method="POST" enctype="multipart/form-data" action="{{ url('/newbooking') }}">
+
     {!! csrf_field() !!}
-        <div class="input-field">
-          <input id="datetimepicker" type="text" class="validate" name="date" data-favorite="{{ $supplier->favorite }}">
-          <label for="email">Datum & tid</label>
+        <div>
+          <input id="datetimepicker" type="text" class="validate" name="date" placeholder="Datum & tid" data-favorite="{{ $supplier->favorite }}">
         </div>
 
-        <div class="input-field">
+        <div>
           <input id="supplier" type="text" value="{{ $supplier->name }}" class="validate" name="supplier_id">
-          <label for="supplier">Leverantör</label>
         </div>
 
         <div class="file-field input-field">
           <div class="btn">
             <span>Pdf</span>
-            <input type="file" name="pdf">
+            <input type="file" name="pdf" multiple>
           </div>
           <div class="file-path-wrapper">
             <input class="file-path validate" type="text" placeholder="Ladda upp pdf">
           </div>
         </div>
+
+
+<!-- <div class="orderbox">
+<h6>Order</h6>
+<div class="input-field">
+<input id="order" type="text" class="validate" name="orders">
+<label for="order">Ordernummer</label>
+</div>
+</div>
+<button class="btn waves-effect default #000000 addarticle">Lägg till artikel</button>
+
+<div class="articlebox">
+<h6 class="article">Artikel</h6>
+<div class="input-field">
+<input id="article" type="text" class="validate" name="orders">
+<label for="article">Artikelnummer</label>
+</div>
+<div class="input-field">
+<input id="article" type="text" class="validate" name="orders">
+<label for="article">Vikt</label>
+</div>
+<div class="input-field">
+<input id="article" type="text" class="validate" name="orders">
+<label for="article">Längd</label>
+</div>
+<div class="input-field">
+<input id="article" type="text" class="validate" name="orders">
+<label for="article">Position</label>
+</div>
+</div> -->
+
+        <button class="btn waves-effect default #000000 addarticle hide">Lägg till artikel</button>
+
+        <button class="btn waves-effect default #000000 addorder">Lägg till order<i class="material-icons right">reorder</i></button>
+
+        <button class="btn waves-effect default #000000 hide bookingbtn" type="submit">Slutför bokning
+          <i class="material-icons right">send</i>
+        </button>
+
+        <a href="/newbooking" class="btn waves-effect default #000000 deletebtn cancelbooking">Avbryt bokning<i class="material-icons right">error</i></a>
+
+</form>
 
         <!-- <div class="input-field">
           <input id="transporter" type="text" class="validate" name="date">
@@ -81,16 +123,5 @@
             <input class="file-path validate" type="text" placeholder="Ladda upp PDF" name="file">
           </div>
         </div>-->
-
-        <button class="btn waves-effect default #000000 addarticle hide">Lägg till artikel</button>
-        <button class="btn waves-effect default #000000 addorder">Lägg till order</button>
-
-        <button class="btn waves-effect default #000000 hide bookingbtn" type="submit">Slutför bokning
-          <i class="material-icons right">send</i>
-        </button>
-        <button class="btn waves-effect default #000000 deletebtn" onclick="location.reload()">Avbryt bokning</button>
-</form>
-
-
 
 @stop

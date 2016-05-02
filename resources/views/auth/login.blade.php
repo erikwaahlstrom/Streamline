@@ -1,7 +1,7 @@
 @extends('logintemplate')
 
 @section('content')
-
+  
 <img src="{{url('img/helens-logga.png')}}" id="helens-logga">
 
 
@@ -15,11 +15,11 @@
   {!! csrf_field() !!}
 
     <div class="white-text text-darken-2">
-      <input type="email" class="validate" name="email" value="{{ old('email') }}">
+      <input type="email" class="validate" placeholder="Leverantör..." name="email" value="{{ old('email') }}">
     </div>
 
     <div class="white-text text-darken-2">
-      <input type="password" class="validate" name="password">
+      <input type="password" class="validate" placeholder="Lösenord..." name="password">
     </div>
 
   <button class="btn waves-effect default #ffffff white" type="submit" name="action" id="loginknapp">Logga in
