@@ -1,7 +1,7 @@
 @extends('logintemplate')
 
 @section('content')
-  
+
 <img src="{{url('img/helens-logga.png')}}" id="helens-logga">
 
 
@@ -15,7 +15,7 @@
   {!! csrf_field() !!}
 
     <div class="white-text text-darken-2">
-      <input type="email" class="validate" placeholder="Leverantör..." name="email" value="{{ old('email') }}">
+      <input type="email" class="validate" placeholder="Email..." name="email" value="{{ old('email') }}">
     </div>
 
     <div class="white-text text-darken-2">

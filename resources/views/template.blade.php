@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Heléns</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
@@ -58,7 +58,18 @@
       </li>
 
         <li>
-          <a href="#"><i class="material-icons sidebaricons">language</i>Språk</a>
+            <!-- Begin TranslateThis Button -->
+
+            <div id="translate-this">
+                <a href="#"><i class="material-icons sidebaricons">language</i>Språk</a>
+                <a style="width:180px;height:18px;display:block;" class="translate-this-button" href="https://www.translatecompany.com/translate-this/">Translate Website</a>
+            </div>
+
+            <script type="text/javascript" src="//x.translateth.is/translate-this.js"></script><script type="text/javascript">TranslateThis();</script>
+
+            <!-- End TranslateThis Button -->
+
+
         </li>
 
     </div>
